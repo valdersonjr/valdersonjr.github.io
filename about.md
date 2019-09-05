@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Sobre
 ---
 
-Something about me.
+Me chamo Sílvio Meireles e sou CTO do Easy Pallet.
