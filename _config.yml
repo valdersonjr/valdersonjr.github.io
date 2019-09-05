@@ -1,12 +1,10 @@
 title: Sílvio Meireles Blog
 description: "My Personal Blog"
 author:
-  name: "silviomeireles"
+  name: "Sílvio Meireles"
   email: "contato@silviomeireles.dev"
   url: "mastersilvio.github.io"
   baseurl: /mastersilvio.github.io
-
-baseurl: /
 
 source: .
 destination: ./_site
