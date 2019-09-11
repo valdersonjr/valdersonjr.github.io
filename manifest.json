@@ -5,12 +5,12 @@
     "background_color": "#151515",
     "display": "standalone",
     "scope": "/",
-    "start_url": "https://silviomeireles.dev/",
+    "start_url": "/",
     "lang": "pt-BR",
     "orientation": "any",
     "icons": [
         {
-            "src": "/images/assets/logo-silviomeireles.png",
+            "src": "assets/logo-silviomeireles.png",
             "sizes": "512x512",
             "type": "image/png"
         }
