@@ -11,3 +11,39 @@
   
   <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" /> {% seo %}
 </head>
+
+{
+  "lang": "{{ site.language }}",
+  "dir": "{{ site.lang_direction }}",
+  "name": {{ site.name | smartify | jsonify }},
+  "short_name": {{ site.short_name | smartify | jsonify }},
+  "icons": [
+    {
+      "src": "assets/logo-silviomeireles.png",
+      "sizes": "192x192",
+      "type": "image\/png"
+    }
+  ],
+  "theme_color": "{{ site.color }}",
+  "background_color": "{{ site.color }}",
+  "start_url": "{{ site.url }}",
+  "display": "standalone",
+  "orientation": "natural"
+}
+
+<script>
+  if ("serviceWorker" in navigator) {
+    if (navigator.serviceWorker.controller) {
+      console.log("An active service worker found, no need to register");
+    } else {
+      // Register the service worker
+      navigator.serviceWorker
+        .register("{{ site.baseurl }}/serviceworker.js", {
+          scope: "./"
+        })
+        .then(function (reg) {
+          console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+  }
+</script>
