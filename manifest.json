@@ -1,18 +1,18 @@
 {
-  "name": "Sílvio Meireles Blog",
-  "short_name": "SM Blog",
-  "theme_color": "#151515",
-  "background_color": "#151515",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
-  "lang": "pt-BR",
-  "orientation": "any",
-  "icons": [
-    {
-      "src": "/assets/logo-silviomeireles.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "name": "Sílvio Meireles Blog",
+    "short_name": "SM Blog",
+    "theme_color": "#151515",
+    "background_color": "#151515",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "https://silviomeireles.dev/",
+    "lang": "pt-BR",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/images/assets/logo-silviomeireles.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
