@@ -25,3 +25,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+
+owner : "silviomeireles"
+year : "2019"
+google_analytics: UA-147349907-1
