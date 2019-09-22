@@ -1,0 +1,18 @@
+{"name" : "Sílvio Meireles Blog",
+  "short_name" : "SM Blog",
+  "description" : "Blog sobre desenvolvimento de software, empreendedorismo, carreira e filosofia.",
+  "start_url" : "https://silviomeireles.dev/",
+  "display" : "fullscreen",
+  "orientation" : "any",
+  "scope" : "/",
+  "lang" : "pt-BR",
+  "theme_color": "#151515",
+  "background_color": "#151515",
+  "icons" :   [
+    {
+      "src": "/assets/logo-silviomeireles.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
