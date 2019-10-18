@@ -1,5 +1,5 @@
 ---
-title: Tudo flui
+title: Tudo flui (Panta Rhei)
 published: true
 ---
 

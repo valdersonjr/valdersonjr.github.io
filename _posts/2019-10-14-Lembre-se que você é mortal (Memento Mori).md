@@ -13,8 +13,7 @@ Memento Mori é uma expressão latina que significa: lembre-se que você é mort
 
 "Muitos homens se apegam e agarraram-se à vida, assim como aqueles que são levados por uma correnteza e se apegam e agarram-se a pedras afiadas. A maioria dos homens mínguam e fluem em miséria entre o medo da morte e as dificuldades da vida; eles não estão dispostos a viver, e ainda não sabem como morrer." - Sêneca
 
-"É melhor ir a uma casa onde há luto do que ir a uma casa onde há festa, pois onde há luto lembramos que um dia também vamos morrer. E os vivos nunca devem esquecer isso."
-- Eclesiastes 7:2 NTLH
+"É melhor ir a uma casa onde há luto do que ir a uma casa onde há festa, pois onde há luto lembramos que um dia também vamos morrer. E os vivos nunca devem esquecer isso." - Eclesiastes 7:2 NTLH
 
 Viva o seu dia como se fosse o último, abrace seus pais, pegue os seus filhos no colo, diga a sua esposa que a ama. Viva o presente, esqueça o passado e pare de pensar tanto no futuro.
 
