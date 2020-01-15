@@ -1,6 +1,7 @@
 ---
 title: One More Sample Page
 published: false
+tag: Sample
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.

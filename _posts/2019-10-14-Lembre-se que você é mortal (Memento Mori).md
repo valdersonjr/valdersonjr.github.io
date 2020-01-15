@@ -1,6 +1,7 @@
 ---
 title: Lembre-se que você é mortal (Memento Mori)
 published: true
+tag: Tecnologia
 ---
 
 É difícil pensar que um dia iremos morrer. É difícil viver pensando que um dia não estaremos mais aqui. 
