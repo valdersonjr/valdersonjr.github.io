@@ -6,9 +6,13 @@ title: Arquivo
 <section>
   {% if site.posts[0] %}
 
-    {% capture first_tag %}{{ site.posts[0].tag }}{% endcapture %}
-
-    <h3> {{ first_tag }} </h3>
+    {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
+    {% capture firstpostyear %}{{ site.posts[0].date | date: '%Y' }}{% endcapture %}
+    {% if currentyear == firstpostyear %}
+        <h3>Últimas postagens</h3>
+    {% else %}  
+        <h3>{{ firstpostyear }}</h3>
+    {% endif %}
 
     {%for post in site.posts %}
       {% unless post.next %}
@@ -16,15 +20,13 @@ title: Arquivo
       {% else %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
         {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% capture tag %}{{ post.tag }}{% endcapture %}
-        {% capture ntag %}{{ post.next.tag }}{% endcapture %}
-        {% if tag != ntag %}
+        {% if year != nyear %}
           </ul>
-          <h3>{{ post.tag }}</h3>
+          <h3>{{ post.date | date: '%Y' }}</h3>
           <ul>
         {% endif %}
       {% endunless %}
-        <li><time>{{ post.date | date:"%d/%m/%Y" }} - </time>
+        <li><time>{{ post.date | date:"%d %b" }} - </time>
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
             {{ post.title }}
           </a>

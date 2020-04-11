@@ -1,7 +1,7 @@
 ---
 title: Por que eu decidi escrever? 
 published: true
-tag: Filosofia
+tag: Tecnologia
 ---
 
 Eu decidi escrever porque quero organizar as minhas ideias e compartilhar um pouco sobre a minha vida pessoal e profissional.
