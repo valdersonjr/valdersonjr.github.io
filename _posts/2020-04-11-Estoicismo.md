@@ -14,7 +14,7 @@ O estoicismo ensina o autocontrole, a razão e a superação de emoções negati
 
 O estoicismo nos diz que o mais importante é o nosso comportamento e reação aos problemas do que as palavras.
 
-O estóicos acreditavam que tudo à nossa volta funciona segundo uma rede de causa e efeitos resultando numa estrutura racional do universo, a que chamavam "logos". Não podemos controlar os eventos à nossa volta, mas podemos controlar como lidamos com isso.
+Os estóicos acreditavam que tudo à nossa volta funciona segundo uma rede de causa e efeitos resultando numa estrutura racional do universo, a que chamavam "logos". Não podemos controlar os eventos à nossa volta, mas podemos controlar como lidamos com isso.
 
 ## Virtudes Fundamentais
 
