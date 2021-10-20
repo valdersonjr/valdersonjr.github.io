@@ -12,11 +12,11 @@ Filósofos, cientistas e religiosos tentam responder o que é viver e qual o sen
 
 Para muitos a vida é trabalhar, conquistar coisas materiais e ter sucesso. Para outros é sobreviver, é não morrer de fome.
 
-A vida é muito do que isso.
+A vida é muito mais do que isso.
 
 Quanto mais se estuda e melhora de vida, mais as prioridades vão mudando.
 
-Mas no final o que importa não é a chegada e sim o trajeto e isso me levou a crer que devemos aproveitar a vida e não focar apenas nos objetivos resultados, mas focar no que realmente importa.
+Mas no final o que importa não é a chegada e sim o trajeto e isso me levou a crer que devemos aproveitar a vida e não focar apenas nos objetivos e resultados, mas focar no que realmente importa.
 
 ## Carpe Diem - Aproveite o dia
 
