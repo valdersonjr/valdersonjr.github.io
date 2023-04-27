@@ -4,3 +4,4 @@ _site/
 .jekyll-metadata
 _example_posts
 .DS_Store
+.tool-versions

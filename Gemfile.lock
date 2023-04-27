@@ -257,6 +257,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
