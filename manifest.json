@@ -1,5 +1,6 @@
-{"name" : "Sílvio Meireles Notes",
-  "short_name" : "SM Notes",
+{
+  "name" : "Sílvio Meireles Notes",
+  "short_name" : "Sílvio Notes",
   "description" : "Blog sobre desenvolvimento de software, empreendedorismo, carreira e filosofia.",
   "start_url" : "https://silviomeireles.dev/",
   "display" : "fullscreen",
