@@ -1,6 +1,6 @@
 ---
 title: 'Investimento para Programadores:  como estudar, crescer na carreira e investir com foco no longo prazo'
-published: false
+published: true
 tag: Investimento
 ---
 
