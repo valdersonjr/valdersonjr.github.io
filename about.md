@@ -7,9 +7,10 @@ title: Sobre
 [Github](https://github.com/mastersilvio)
 [LinkedIn](https://www.linkedin.com/in/mastersilvio/)
 [Twitter](https://twitter.com/silviojmeireles)
+[Podcast] (https://bulletrails.com.br/)
 {: style="text-align: center;"}
 
-Me chamo Sílvio Meireles e sou CTO do [Easy Pallet](http://www.easypallet.com.br).
+Me chamo Sílvio Meireles e sou CTO da [Easy Pallet](http://www.easypallet.com.br).
 {: style="text-align: center;"}
 Um pouco sobre mim:
   - Bacharel em Sistemas de Informação e Especialista em Desenvolvimento Web.
