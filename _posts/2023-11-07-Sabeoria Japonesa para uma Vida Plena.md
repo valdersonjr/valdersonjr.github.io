@@ -1,7 +1,7 @@
 ---
 title: 'A Sabedoria Japonesa para uma Vida Plena: Entendendo Ikigai, Kaizen, Hara Hachi Bu, Shoshin e Wabi-sabi'
 published: true
-tag: Investimento
+tag: Filosofia
 ---
 
 No coração da filosofia japonesa, existem conceitos que oferecem uma profunda orientação para viver uma vida plena e satisfatória. *Ikigai*, *Kaizen*, *Hara Hachi Bu*, *Shoshin* e *Wabi-sabi* são algumas dessas joias que, quando entrelaçadas, formam um tecido de práticas e visões de mundo que podem enriquecer nosso cotidiano.
