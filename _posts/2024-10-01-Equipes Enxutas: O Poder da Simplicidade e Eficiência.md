@@ -1,5 +1,5 @@
 ---
-title: '*Equipes Enxutas: O Poder da Simplicidade e Eficiência'
+title: 'Equipes Enxutas: O Poder da Simplicidade e Eficiência'
 published: true
 tag: Tecnologia
 ---
