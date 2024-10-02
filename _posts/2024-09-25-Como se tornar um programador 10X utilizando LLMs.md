@@ -28,7 +28,7 @@ Características comuns de programadores 10X incluem a habilidade de aprender ra
 
 ### Usando LLMs para se Tornar um Programador 10X
 
-LLMs (Large Language Models), como o GPT-4, trouxeram uma nova dimensão para a forma como interagimos com a programação. Ao utilizar LLMs, programadores têm acesso a uma ferramenta que pode agir como um parceiro de desenvolvimento, oferecendo sugestões de código, identificando padrões, solucionando bugs e até mesmo auxiliando no planejamento de projetos.
+LLMs (Large Language Models), como o GPT-4o e Claude 3.5 Sonnet, trouxeram uma nova dimensão para a forma como interagimos com a programação. Ao utilizar LLMs, programadores têm acesso a uma ferramenta que pode agir como um parceiro de desenvolvimento, oferecendo sugestões de código, identificando padrões, solucionando bugs e até mesmo auxiliando no planejamento de projetos.
 
 #### 1. **Automação de Tarefas Repetitivas**
 Um dos maiores drenos de produtividade é a necessidade de repetir tarefas rotineiras. LLMs podem ser treinados para automatizar essas tarefas, permitindo que o programador se concentre nas partes mais criativas e desafiadoras do trabalho. Seja escrevendo boilerplate code, gerando testes unitários ou criando documentação, a automação por LLMs libera tempo para o que realmente importa.
