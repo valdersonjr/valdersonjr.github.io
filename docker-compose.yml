@@ -1,0 +1,16 @@
+services:
+  site:
+    build: .
+    volumes:
+      - .:/app
+      - bundler_gems:/usr/local/bundle
+    ports:
+      - "4000:4000"
+    environment:
+      - JEKYLL_ENV=development
+      - BUNDLER_VERSION=2.4.0
+    command: bundle exec jekyll serve --livereload --host 0.0.0.0
+
+volumes:
+  bundler_gems:
+
