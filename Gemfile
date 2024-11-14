@@ -1,8 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+gem 'github-pages', group: :jekyll_plugins
+gem 'jekyll', '~> 3.9.3'
 gem 'jekyll-seo-tag'
 gem 'jekyll-paginate'
 gem 'jekyll-sitemap'
-gem 'github-pages'
-gem 'kramdown'
+gem 'kramdown-parser-gfm'
+gem 'webrick'
+
+group :jekyll_plugins do
+  gem 'jekyll-feed'
+end

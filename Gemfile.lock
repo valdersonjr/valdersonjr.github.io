@@ -250,6 +250,7 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     unicode-display_width (1.8.0)
+    webrick (1.9.0)
     zeitwerk (2.6.7)
 
 PLATFORMS
@@ -257,11 +258,13 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
+  jekyll (~> 3.9.3)
+  jekyll-feed
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
-  kramdown
+  kramdown-parser-gfm
+  webrick
 
 BUNDLED WITH
-   2.1.4
+   2.5.23
