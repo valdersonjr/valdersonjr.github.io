@@ -1,0 +1,38 @@
+# Arquivos de build e cache do Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Arquivos de git
+.git/
+.gitignore
+.gitattributes
+
+# Arquivos de desenvolvimento
+node_modules/
+vendor/
+.bundle/
+.env*
+.tool-versions
+
+# Arquivos de Docker
+Dockerfile
+docker-compose.yml
+.docker/
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Logs e arquivos temporários
+*.log
+tmp/
+.tmp/
