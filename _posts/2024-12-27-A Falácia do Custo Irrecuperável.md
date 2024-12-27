@@ -40,23 +40,23 @@ A falácia do custo irrecuperável é mais emocional do que racional. Alguns dos
 
 Aqui estão algumas estratégias práticas para tomar decisões melhores e evitar esse erro:
 
-1. Reavalie a situação objetivamente
+### Reavalie a situação objetivamente
 
-Pergunte a si mesmo: Se eu estivesse começando do zero hoje, ainda escolheria continuar com isso? Se a resposta for “não”, talvez seja hora de parar.
+  Pergunte a si mesmo: Se eu estivesse começando do zero hoje, ainda escolheria continuar com isso? Se a resposta for “não”, talvez seja hora de parar.
 
-2. Aceite que perdas fazem parte da vida
+### Aceite que perdas fazem parte da vida
 
 Reconheça que todos cometemos erros e que é normal abandonar algo que não está funcionando.
 
-3. Foque no futuro, não no passado
+### Foque no futuro, não no passado
 
 Lembre-se de que os custos já investidos não podem ser recuperados. Concentre-se nos custos e benefícios futuros da sua decisão.
 
-4. Considere a regra dos 10-10-10
+### Considere a regra dos 10-10-10
 
 Pergunte-se: Como vou me sentir em 10 dias, 10 meses e 10 anos se continuar com essa escolha?
 
-5. Converse com outras pessoas
+### Converse com outras pessoas
 
 Às vezes, estamos tão envolvidos emocionalmente que não conseguimos pensar claramente. Uma opinião externa pode ajudar.
 
