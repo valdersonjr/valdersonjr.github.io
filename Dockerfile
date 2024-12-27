@@ -7,21 +7,26 @@ RUN apt-get update -qq && \
     git \
     zlib1g-dev \
     liblzma-dev \
-    && gem update --system \
-    && gem install bundler \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # Define diretório de trabalho
 WORKDIR /app
 
+# Configura bundler e gems
+ENV BUNDLE_PATH=/usr/local/bundle
+ENV GEM_HOME=/usr/local/bundle
+ENV PATH="/usr/local/bundle/bin:${PATH}"
+
+# Instala gems necessários
+RUN gem update --system && \
+    gem install bundler jekyll
+
 # Copia arquivos de dependência
 COPY Gemfile* ./
 
-# Modificado o bundle install para ser mais verboso e garantir instalação
-RUN bundle config set --local path 'vendor/bundle' && \
-    bundle install --verbose && \
-    bundle exec jekyll --version
+# Instala dependências do projeto
+RUN bundle install
 
 # Copia o resto do projeto
 COPY . .
