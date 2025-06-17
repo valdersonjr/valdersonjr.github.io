@@ -1,7 +1,7 @@
 ---
-title: 'A Anatomia de um Luto - C S Lewis'
+title: 'Livro: A Anatomia de um Luto - C S Lewis'
 published: true
-tag: Livros
+tags: [Livros]
 ---
 
 ### Review e considerações sobre o momento da leitura do livro

@@ -1,7 +1,7 @@
 ---
 title: 'O Poder Realista do Pensamento Positivo'
 published: true
-tag: Pensamentos
+tags: [Pensamentos, Psicologia, Desenvolvimento Pessoal]
 ---
 
 > “O que você pensa determina a qualidade da sua mente.
@@ -15,7 +15,7 @@ Já em outra fase, fui mais realista, com os pés no chão. Mas, curiosamente, o
 
 Diante desses dois cenários, surge a pergunta:
 
-**Será que isso comprova a “Lei da Atração”?**
+**Será que isso comprova a "Lei da Atração"?**
 Será que basta alguém, em algum lugar da África, pensar positivo para que toda a sua realidade mude da noite para o dia?
 
 **Óbvio que não.**

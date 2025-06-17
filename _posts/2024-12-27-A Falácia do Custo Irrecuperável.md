@@ -1,7 +1,7 @@
 ---
 title: 'A Falácia do Custo Irrecuperável: Como Evitar Cair Nesse Erro Comum'
 published: true
-tag: Negócios
+tags: [Negócios, Psicologia]
 ---
 
 Todos nós já estivemos em situações em que parecia mais fácil continuar em algo que não dava certo do que simplesmente desistir. Pode ser um projeto que nunca sai do papel, um relacionamento que perdeu o brilho ou até mesmo um curso que não nos interessa mais. Esse comportamento tem um nome: falácia do custo irrecuperável, também conhecida como falácia do custo afundado.

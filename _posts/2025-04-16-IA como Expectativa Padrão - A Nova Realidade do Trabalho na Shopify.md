@@ -1,7 +1,7 @@
 ---
-title: 'IA como Expectativa Padrão: A Nova Realidade do Trabalho na Shopify'
+title: 'IA como Expectativa Padrão - A Nova Realidade do Trabalho na Shopify'
 published: true
-tag: Tecnologia
+tags: [Tecnologia, IA, Trabalho]
 ---
 
 Estamos vivendo um dos momentos mais transformadores da história do trabalho. A inteligência artificial (IA), que por muito tempo habitava apenas o imaginário futurista, agora é uma ferramenta tão essencial quanto um computador ou uma conexão à internet.

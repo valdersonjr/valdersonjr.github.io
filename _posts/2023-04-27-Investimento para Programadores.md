@@ -1,7 +1,7 @@
 ---
 title: 'Investimento para Programadores:  como estudar, crescer na carreira e investir com foco no longo prazo'
 published: true
-tag: Investimento
+tags: [Investimento, Finanças, Carreira]
 ---
 
 Para programadores, a tecnologia é a principal fonte de renda. Mas, para garantir uma vida financeira estável, é importante também investir de forma inteligente e eficaz. Neste post, vamos falar sobre como os programadores podem estudar, crescer na carreira, fazer reserva de emergência de 12 meses e investir em renda fixa e variável com foco no longo prazo.

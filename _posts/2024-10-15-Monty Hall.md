@@ -1,12 +1,12 @@
 ---
-title: 'Entendendo o Paradoxo de Monty Hall com Ruby: Demonstração Interativa'
+title: 'Monty Hall'
 published: false
-tag: Tecnologia
+tags: [Tecnologia, Probabilidade, Matemática]
 ---
 
 ## Introdução:
 
-O Paradoxo de Monty Hall é um problema de probabilidade que confunde muitas pessoas. Ele se popularizou com o show “Let’s Make a Deal”, apresentado por Monty Hall. A questão é a seguinte: você participa de um jogo onde há três portas. Atrás de uma delas está um carro e, atrás das outras duas, bodes. Você escolhe uma porta, mas o apresentador, que sabe o que está atrás de cada porta, abre uma das outras duas, revelando um bode. Então, ele te dá a opção de trocar de porta ou manter a sua escolha original. O que você deve fazer para aumentar suas chances de ganhar o carro?
+O Paradoxo de Monty Hall é um problema de probabilidade que confunde muitas pessoas. Ele se popularizou com o show "Let's Make a Deal", apresentado por Monty Hall. A questão é a seguinte: você participa de um jogo onde há três portas. Atrás de uma delas está um carro e, atrás das outras duas, bodes. Você escolhe uma porta, mas o apresentador, que sabe o que está atrás de cada porta, abre uma das outras duas, revelando um bode. Então, ele te dá a opção de trocar de porta ou manter a sua escolha original. O que você deve fazer para aumentar suas chances de ganhar o carro?
 
 A solução surpreendente é que, para maximizar suas chances de ganhar, você deve trocar de porta. Nesse blog post, vamos entender o porquê e simular o Paradoxo de Monty Hall com Ruby.
 

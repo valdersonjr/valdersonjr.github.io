@@ -1,7 +1,7 @@
 ---
-title: Aproveite a vida
+title: 'Aproveite a Vida'
 published: true
-tag: Filosofia
+tags: [Filosofia, Estoicismo]
 ---
 
 O que é viver?
@@ -22,38 +22,38 @@ Mas no final o que importa não é a chegada e sim o trajeto e isso me levou a c
 
 Todos os dias, até que a vinda se finde, nos é dado uma nova oportunidade, um novo Sol.
 
-Devemos ser gratos e aproveitar a oportunidade valorizando os momentos em família. 
+Devemos ser gratos e aproveitar a oportunidade valorizando os momentos em família.
 
 ## Fac Vita Incrediblem - Faça uma vida incrível
 
-O que é uma vida incrível? 
+O que é uma vida incrível?
 
 Ser próspero e não aproveitar o tempo?
 
 A vida incrível é que aquela onde se tem três coisas:
 
-### 1 - Saúde 
+### 1 - Saúde
 
-Saúde não só pela ausência de doença, mas pela energia e disposição de fazer as coisas. 
+Saúde não só pela ausência de doença, mas pela energia e disposição de fazer as coisas.
 
 Saúde mental, felicidade e bem-estar consigo mesmo.
 
 ### 2 - Tempo
 
-Não adianta ter dinheiro, mas não ter tempo pra aproveitar. 
+Não adianta ter dinheiro, mas não ter tempo pra aproveitar.
 
-Aquele que tempo, tem liberdade e oportunidade pra aproveitar bons momentos. 
+Aquele que tempo, tem liberdade e oportunidade pra aproveitar bons momentos.
 
 ### 3 - Dinheiro
 
-Dinheiro nos traz liberdade e oportunidade de ajudar outras pessoas. 
+Dinheiro nos traz liberdade e oportunidade de ajudar outras pessoas.
 
 Dinheiro não é ruim, pois ele compra a proteção, a liberdade e, principalmente, o poder de dizer não.
 
 ## Memento Vivere
 
-Lembre-se que a vida não é só trabalho, mas aproveitar o que de melhor que nos é dado. 
+Lembre-se que a vida não é só trabalho, mas aproveitar o que de melhor que nos é dado.
 
-Veja o pôr do Sol, sinta o vento tocar o seu rosto e observe os pássaros. 
+Veja o pôr do Sol, sinta o vento tocar o seu rosto e observe os pássaros.
 
-Aproveite a vida! 
+Aproveite a vida!

@@ -1,7 +1,7 @@
 ---
 title: 'Document First: Potencializando o Desenvolvimento com LLMs'
 published: true
-tag: Tecnologia
+tags: [Tecnologia, IA, Desenvolvimento]
 ---
 
 A abordagem *Document First* tem ganhado destaque no desenvolvimento de software, especialmente com a crescente adoção de modelos de linguagem de grande escala (LLMs), como o GitHub Copilot. Ao priorizar a documentação antes da implementação, essa metodologia promove clareza, alinhamento e eficiência em projetos de software.

@@ -1,7 +1,7 @@
 ---
-title: 'Vibe Coding: A Nova Era da Programação com IA'
+title: 'Vibe Coding - A Nova Era da Programação com IA'
 published: true
-tag: Tecnologia
+tags: [Tecnologia, IA, Desenvolvimento]
 ---
 
 ## O que é Vibe Coding?

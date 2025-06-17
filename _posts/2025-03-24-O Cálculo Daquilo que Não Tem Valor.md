@@ -1,7 +1,7 @@
 ---
-title: 'O cálculo daquilo que não tem valor'
+title: 'O Cálculo Daquilo que Não Tem Valor'
 published: true
-tag: Pensamentos
+tags: [Pensamentos, Filosofia, Matemática]
 ---
 
 Sempre fui uma pessoa que ama calcular.

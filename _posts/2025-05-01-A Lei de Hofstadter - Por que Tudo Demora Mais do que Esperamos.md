@@ -1,7 +1,7 @@
 ---
 title: 'A Lei de Hofstadter: Por que Tudo Demora Mais do que Esperamos'
 published: true
-tag: Tecnologia
+tags: [Tecnologia, Gestão, Produtividade]
 ---
 
 **“Sempre leva mais tempo do que você espera, mesmo quando você leva em conta a Lei de Hofstadter.”**

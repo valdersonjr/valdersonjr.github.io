@@ -1,7 +1,7 @@
 ---
-title: Another Sample Page
+title: 'Another Sample Page'
 published: false
-tag: Sample
+tags: [Sample]
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
