@@ -59,6 +59,24 @@ header {
 
 .header-links {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.toggles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-link {
@@ -88,9 +106,7 @@ header h2 {
 
 /* Language toggle */
 .lang-toggle {
-  position: absolute;
-  top: 12px;
-  right: 16px;
+  position: static;
 }
 
 .lang-toggle input {
@@ -148,9 +164,7 @@ header h2 {
 
 /* Theme toggle */
 .theme-toggle {
-  position: absolute;
-  top: 12px;
-  right: 100px;
+  position: static;
 }
 
 .theme-toggle button {
@@ -399,12 +413,14 @@ html.theme-light code.highlighter-rouge {
   color: #c7254e;
 }
 
-html.theme-light a {
-  color: #0366d6;
-  text-shadow: none;
-}
-
-html.theme-light th, html.theme-light hr {
-  border-bottom-color: #ccc;
-  color: #ccc;
+/* Responsiveness */
+@media (max-width: 480px) {
+  .header-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-links {
+    justify-content: center;
+  }
 }
