@@ -146,6 +146,28 @@ header h2 {
   opacity: 1;
 }
 
+/* Theme toggle */
+.theme-toggle {
+  position: absolute;
+  top: 12px;
+  right: 100px;
+}
+
+.theme-toggle button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px dashed $conifer;
+  border-radius: 999px;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(181, 232, 83, 0.25);
+  color: $conifer;
+}
+
 /* Main Content
 */
 
@@ -331,4 +353,58 @@ a:active, a:focus {
 
 #wrapper {
   min-height: calc(100vh - 100px);
+}
+
+/* Light theme overrides */
+html.theme-light body {
+  background: #fdfdfd;
+  color: #222;
+}
+
+html.theme-light header {
+  background: rgba(0, 0, 0, 0.03);
+  border-bottom-color: $conifer;
+}
+
+html.theme-light .lang-toggle label,
+html.theme-light .theme-toggle button {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: $conifer;
+  box-shadow: 0 0 8px rgba(181, 232, 83, 0.15);
+}
+
+html.theme-light .switch-slider {
+  background: rgba(255,255,255,0.9);
+  border-color: rgba(0,0,0,0.12);
+}
+
+html.theme-light .switch-slider::after {
+  box-shadow: 0 0 4px rgba(181, 232, 83, 0.4);
+}
+
+html.theme-light h1, html.theme-light h2, html.theme-light h3,
+html.theme-light h4, html.theme-light h5, html.theme-light h6 {
+  text-shadow: none;
+}
+
+html.theme-light pre {
+  background: #f6f8fa;
+  border-color: #ddd;
+  color: #333;
+}
+
+html.theme-light code.highlighter-rouge {
+  background: #f6f8fa;
+  border-color: #ddd;
+  color: #c7254e;
+}
+
+html.theme-light a {
+  color: #0366d6;
+  text-shadow: none;
+}
+
+html.theme-light th, html.theme-light hr {
+  border-bottom-color: #ccc;
+  color: #ccc;
 }

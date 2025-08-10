@@ -40,6 +40,10 @@
       {% endif %}
     {% endif %}
 
+    <div class="theme-toggle">
+      <button id="theme-button" aria-label="Alternar tema" title="Alternar tema">🌙</button>
+    </div>
+
     <div class="lang-toggle">
       <input type="checkbox" id="lang-switch" {% if current_lang == 'en' %}checked{% endif %} aria-label="Switch language">
       <label for="lang-switch">
@@ -52,10 +56,40 @@
     <script>
       (function(){
         var el = document.getElementById('lang-switch');
-        if (!el) return;
-        el.addEventListener('change', function(){
-          var href = '{{ counterpart_url | prepend: site.baseurl | replace: "//", "/" }}';
-          window.location.href = href;
+        if (el) {
+          el.addEventListener('change', function(){
+            var href = '{{ counterpart_url | prepend: site.baseurl | replace: "//", "/" }}';
+            window.location.href = href;
+          });
+        }
+      })();
+    </script>
+
+    <script>
+      (function(){
+        var button = document.getElementById('theme-button');
+        if (!button) return;
+        function currentThemeIsLight() {
+          return document.documentElement.classList.contains('theme-light');
+        }
+        function setTheme(theme) {
+          var root = document.documentElement;
+          root.classList.remove('theme-light', 'theme-dark');
+          root.classList.add(theme === 'light' ? 'theme-light' : 'theme-dark');
+          try { localStorage.setItem('theme', theme); } catch (e) {}
+        }
+        function updateButton() {
+          var isLight = currentThemeIsLight();
+          button.textContent = isLight ? '☀️' : '🌙';
+          button.setAttribute('aria-label', isLight ? 'Tema claro' : 'Tema escuro');
+          button.setAttribute('title', isLight ? 'Tema claro' : 'Tema escuro');
+        }
+        // Initialize icon on load
+        updateButton();
+        button.addEventListener('click', function(){
+          var next = currentThemeIsLight() ? 'dark' : 'light';
+          setTheme(next);
+          updateButton();
         });
       })();
     </script>
