@@ -19,6 +19,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      lang: pt
 
 future: true
 plugins:

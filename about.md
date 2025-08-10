@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Sobre
+lang: pt
+translation_key: about
 ---
 
 ![Sílvio Meireles](/assets/silviomeireles.jpg){: .center-image }

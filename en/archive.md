@@ -1,23 +1,23 @@
 ---
 layout: page
-title: Arquivo
-lang: pt
+lang: en
 translation_key: archive
+permalink: /en/archive/
 ---
 
 <section>
-  {% assign posts_pt = site.posts | where: 'lang', 'pt' %}
-  {% if posts_pt[0] %}
+  {% assign posts_en = site.posts | where: 'lang', 'en' %}
+  {% if posts_en[0] %}
 
     {% capture currentyear %}{{ 'now' | date: "%Y" }}{% endcapture %}
-    {% capture firstpostyear %}{{ posts_pt[0].date | date: '%Y' }}{% endcapture %}
+    {% capture firstpostyear %}{{ posts_en[0].date | date: '%Y' }}{% endcapture %}
     {% if currentyear == firstpostyear %}
-        <h3>Últimas postagens</h3>
+        <h3>Latest posts</h3>
     {% else %}  
         <h3>{{ firstpostyear }}</h3>
     {% endif %}
 
-    {%for post in posts_pt %}
+    {%for post in posts_en %}
       {% unless post.next %}
         <ul>
       {% else %}
