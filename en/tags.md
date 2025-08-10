@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /tags/
-lang: pt
+permalink: /en/tags/
+lang: en
 translation_key: tags
 ---
 
@@ -13,7 +13,7 @@ translation_key: tags
     <h3 class="tag-head"><small>{{ tag_name }}</small></h3>
     <a name="{{ tag_name | slugize }}"></a>
 
-    {% assign posts_for_tag = site.tags[tag_name] | where: 'lang', 'pt' %}
+    {% assign posts_for_tag = site.tags[tag_name] | where: 'lang', 'en' %}
     {% for post in posts_for_tag %}
       <ul>
         <li><time>{{ post.date | date:"%d/%m/%Y" }} - </time>
