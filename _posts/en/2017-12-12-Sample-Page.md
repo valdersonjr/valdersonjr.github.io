@@ -2,7 +2,9 @@
 title: 'Sample Page'
 published: false
 tags: [Sample]
+lang: en
 translation_key: sample-page
+permalink: /en/sample-page
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
@@ -124,3 +126,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
