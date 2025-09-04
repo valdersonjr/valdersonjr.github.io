@@ -58,12 +58,35 @@
 
     <script>
       (function(){
-        var el = document.getElementById('lang-switch');
-        if (el) {
-          el.addEventListener('change', function(){
-            var href = '{{ counterpart_url | prepend: site.baseurl | replace: "//", "/" }}';
-            window.location.href = href;
-          });
+        function initLangToggle(){
+          var el = document.getElementById('lang-switch');
+          if (!el) return;
+          var hasPt = !!document.querySelector('.lang-pt');
+          var hasEn = !!document.querySelector('.lang-en');
+          var hasBilingual = hasPt && hasEn;
+          if (hasBilingual) {
+            var saved = null;
+            try { saved = localStorage.getItem('lang'); } catch(e) {}
+            var fallback = '{{ current_lang }}' || 'pt';
+            var lang = (saved === 'pt' || saved === 'en') ? saved : fallback;
+            document.documentElement.setAttribute('data-lang', lang);
+            el.checked = (lang === 'en');
+            el.addEventListener('change', function(){
+              lang = el.checked ? 'en' : 'pt';
+              document.documentElement.setAttribute('data-lang', lang);
+              try { localStorage.setItem('lang', lang); } catch (e) {}
+            });
+          } else {
+            el.addEventListener('change', function(){
+              var href = '{{ counterpart_url | prepend: site.baseurl | replace: "//", "/" }}';
+              window.location.href = href;
+            });
+          }
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initLangToggle);
+        } else {
+          initLangToggle();
         }
       })();
     </script>
