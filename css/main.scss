@@ -14,33 +14,3 @@
   margin: 0 auto;
   display: block;
 }
-
-/* Language visibility */
-:root[data-lang='pt'] .lang-en {
-  display: none !important;
-}
-
-:root[data-lang='en'] .lang-pt {
-  display: none !important;
-}
-
-.lang-toggle label {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.lang-toggle .switch-slider {
-  display: inline-block;
-  width: 34px;
-  height: 18px;
-  background: #ccc;
-  border-radius: 9px;
-  position: relative;
-}
-
-.lang-toggle input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
