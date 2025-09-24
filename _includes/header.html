@@ -5,37 +5,6 @@
     <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
     </a>
 
-    {% assign current_lang = page.lang | default: 'pt' %}
-    {% if current_lang == 'pt' %}
-      {% assign target_lang = 'en' %}
-    {% else %}
-      {% assign target_lang = 'pt' %}
-    {% endif %}
-
-    {% assign counterpart_url = nil %}
-    {% if page.translation_key %}
-      {% if page.date %}
-        {% for p in site.posts %}
-          {% if p.translation_key == page.translation_key and p.lang == target_lang %}
-            {% assign counterpart_url = p.url %}
-          {% endif %}
-        {% endfor %}
-      {% else %}
-        {% for pg in site.pages %}
-          {% if pg.translation_key == page.translation_key and pg.lang == target_lang %}
-            {% assign counterpart_url = pg.url %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    {% endif %}
-
-    {% if counterpart_url == nil %}
-      {% if target_lang == 'en' %}
-        {% assign counterpart_url = '/en/' %}
-      {% else %}
-        {% assign counterpart_url = '/' %}
-      {% endif %}
-    {% endif %}
 
     <div class="header-links">
       <div class="nav-links">
@@ -45,51 +14,9 @@
         <div class="theme-toggle">
           <button id="theme-button" aria-label="Alternar tema" title="Alternar tema">🌙</button>
         </div>
-        <div class="lang-toggle">
-          <input type="checkbox" id="lang-switch" {% if current_lang == 'en' %}checked{% endif %} aria-label="Switch language">
-          <label for="lang-switch">
-            <span class="lang-option lang-pt">PT</span>
-            <span class="switch-slider"></span>
-            <span class="lang-option lang-en">EN</span>
-          </label>
-        </div>
       </div>
     </div>
 
-    <script>
-      (function(){
-        function initLangToggle(){
-          var el = document.getElementById('lang-switch');
-          if (!el) return;
-          var hasPt = !!document.querySelector('.lang-pt');
-          var hasEn = !!document.querySelector('.lang-en');
-          var hasBilingual = hasPt && hasEn;
-          if (hasBilingual) {
-            var saved = null;
-            try { saved = localStorage.getItem('lang'); } catch(e) {}
-            var fallback = '{{ current_lang }}' || 'pt';
-            var lang = (saved === 'pt' || saved === 'en') ? saved : fallback;
-            document.documentElement.setAttribute('data-lang', lang);
-            el.checked = (lang === 'en');
-            el.addEventListener('change', function(){
-              lang = el.checked ? 'en' : 'pt';
-              document.documentElement.setAttribute('data-lang', lang);
-              try { localStorage.setItem('lang', lang); } catch (e) {}
-            });
-          } else {
-            el.addEventListener('change', function(){
-              var href = '{{ counterpart_url | prepend: site.baseurl | replace: "//", "/" }}';
-              window.location.href = href;
-            });
-          }
-        }
-        if (document.readyState === 'loading') {
-          document.addEventListener('DOMContentLoaded', initLangToggle);
-        } else {
-          initLangToggle();
-        }
-      })();
-    </script>
 
     <script>
       (function(){

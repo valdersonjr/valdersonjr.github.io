@@ -104,63 +104,6 @@ header h2 {
   color: #666;
 }
 
-/* Language toggle */
-.lang-toggle {
-  position: static;
-}
-
-.lang-toggle input {
-  display: none;
-}
-
-.lang-toggle label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px dashed $conifer;
-  border-radius: 999px;
-  padding: 6px 10px;
-  cursor: pointer;
-  box-shadow: 0 0 8px rgba(181, 232, 83, 0.25);
-}
-
-.lang-option {
-  font-size: 12px;
-  color: $conifer;
-  opacity: 0.6;
-}
-
-.switch-slider {
-  width: 34px;
-  height: 18px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.2);
-  position: relative;
-  background: rgba(20,20,20,0.9);
-}
-
-.switch-slider::after {
-  content: '';
-  position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 14px;
-  height: 14px;
-  background: $conifer;
-  border-radius: 50%;
-  box-shadow: 0 0 6px rgba(181, 232, 83, 0.6);
-  transition: left 0.15s ease-in-out;
-}
-
-#lang-switch:checked + label .switch-slider::after {
-  left: 18px;
-}
-
-#lang-switch:not(:checked) + label .lang-pt,
-#lang-switch:checked + label .lang-en {
-  opacity: 1;
-}
 
 /* Theme toggle */
 .theme-toggle {
@@ -380,21 +323,12 @@ html.theme-light header {
   border-bottom-color: $conifer;
 }
 
-html.theme-light .lang-toggle label,
 html.theme-light .theme-toggle button {
   background: rgba(255, 255, 255, 0.9);
   border-color: $conifer;
   box-shadow: 0 0 8px rgba(181, 232, 83, 0.15);
 }
 
-html.theme-light .switch-slider {
-  background: rgba(255,255,255,0.9);
-  border-color: rgba(0,0,0,0.12);
-}
-
-html.theme-light .switch-slider::after {
-  box-shadow: 0 0 4px rgba(181, 232, 83, 0.4);
-}
 
 html.theme-light h1, html.theme-light h2, html.theme-light h3,
 html.theme-light h4, html.theme-light h5, html.theme-light h6 {
