@@ -171,7 +171,17 @@ dt {
 }
 
 ul li {
-  list-style-image:url('../assets/bullet.png');
+  list-style: none;
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 12px;
+}
+
+ul li::before {
+  content: "🐾";
+  position: absolute;
+  left: 0;
+  filter: grayscale(100%) brightness(1.1) sepia(100%) saturate(400%) hue-rotate(10deg);
 }
 
 blockquote {

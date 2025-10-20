@@ -1,13 +1,4 @@
-{% assign current_lang = page.lang | default: 'pt' %}
-{% if current_lang == 'en' %}
-<a href="{{ "/en/" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">Home</h2></a>
-<a href="{{ "/en/archive" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">Archive</h2></a>
-<a href="{{ "/en/tags" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">Tags</h2></a>
-<a href="{{ "/en/about" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">About</h2></a>
-{% else %}
 <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">Início</h2></a>
 <a href="{{ "/archive" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">Arquivo</h2></a>
 <a href="{{ "/tags" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">Tags</h2></a>
 <a href="{{ "/about" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">Sobre</h2></a>
-{% endif %}
-<!-- <a href="{{ "/atom.xml" | prepend: site.baseurl | replace: '//', '/' }}"><h2 class="header-link">RSS</h2></a> -->

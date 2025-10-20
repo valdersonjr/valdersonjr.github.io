@@ -117,13 +117,18 @@ footer a:hover {
 .home-posts li {
   margin-bottom: 40px;
   padding: 24px 0;
+  padding-left: 0 !important;
   border-bottom: 1px solid #21262d;
   list-style: none;
   transition: padding-left 0.2s ease;
 }
 
+.home-posts li::before {
+  content: none !important;
+}
+
 .home-posts li:hover {
-  padding-left: 8px;
+  padding-left: 8px !important;
 }
 
 .home-posts li:last-child {
@@ -209,4 +214,9 @@ html {
   margin-top: 80px;
   padding-top: 60px;
   border-top: 1px solid #30363d;
+}
+
+/* About page image spacing */
+.center-image {
+  margin-bottom: 40px;
 }

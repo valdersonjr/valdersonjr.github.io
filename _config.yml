@@ -1,10 +1,10 @@
-title: Sílvio Meireles Notes
-description: "My Personal Blog"
+title: valdersonjr notes
+description: "Um blog para aprendizados e pensamentos"
 author:
-  name: "Sílvio Meireles"
+  name: "Valderson Junior"
   email: "contato@valdersonjr.dev"
-  url: "mastersilvio.github.io"
-  baseurl: /mastersilvio.github.io
+  url: "valdersonjr.github.io"
+  baseurl: /valdersonjr.github.io
 
 source: .
 destination: ./_site

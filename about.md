@@ -4,40 +4,67 @@ lang: pt
 translation_key: about
 ---
 
+{: style="text-align: center;"}
+[Github](https://github.com/valdersonjr) |
+[LinkedIn](https://www.linkedin.com/in/valdersonjr/)
+<br>
+<br>
+Olá! Eu sou o Valderson Junior, e esse carinha de bigode aí é o Luigi. 
+<br>
+Bem-vindo ao meu pequeno universo.
+<br>
+<br>
+{: style="text-align: center;"}
+
 ![valdersonjr](/assets/valdersonjr.jpeg){: .center-image }
-[Github](https://github.com/mastersilvio)
-[LinkedIn](https://www.linkedin.com/in/mastersilvio/)
-[Twitter](https://twitter.com/silviojmeireles)
-[Podcast](https://bulletrails.com.br/)
-{: style="text-align: center;"}
 
-Me chamo Sílvio Meireles e sou CTO da [Easy Pallet](http://www.easypallet.com.br).
-{: style="text-align: center;"}
+
+
+<br>
+<br>
 Um pouco sobre mim:
-  - Bacharel em Sistemas de Informação e Especialista em Desenvolvimento Web.
-  - Desenvolvedor full-stack focado em Ruby on Rails com fortes conhecimentos em algoritmos, banco de dados, integração de dados e Business Intelligence.
-  - Gosto muito de aprender coisas novas e evoluir em todos aspectos da minha vida. Gosto muito de seguir em frente, de novidades e de mudanças.
-  - Sou apaixonado por tecnologia desde criança e desde sempre gosto de buscar o meu próprio conhecimento, sempre fui autodidata.
+  - Sempre gostei muito de matemática. Minto! Gosto muito e espontaneamente da **lógica** matemática, principalmente por envolver reconhecimento e entendimento de padrões.
+  - Você consegue me fazer horas conversando sobre a vida, verdade e universo. Assuntos filosóficos me despertam bastante interesse.
+  - Me senti por muito tempo uma falha como desenvolvedor por um simples motivo: não gosto de café. Faço uso pelo simples interesse de ficar desperto.
+  - Por fim, caso ainda não tenha ficado muito claro, amo gatinhos. São bolinhas fofas de pelo e bastante engraçados.
 
-## Principais Habilidades
+<br>
 
-**Algoritmos**
-  - Estruturas de dados avançadas
-  - Complexidade computacional
-  - Algoritmos de ordenação e busca
-  - Programação dinâmica e algoritmos de grafos
+## Algumas conquistas pessoais que me deixam feliz
+- Medalhista de bronze, prata e ouro da MOBFOG
+- Medalhista de bronze em uma competição internacional de matemática
+- Participante do Goiás Sem Fronteiras
+- Aprovado na Universidade de Brasília para Engenharia de Software
+- Aprovado no Concurso da Caixa
+- Fortes amizades e amor pela minha família
 
-**Inteligência Artificial**
-  - Machine Learning e Deep Learning
-  - Processamento de linguagem natural (NLP)
-  - Redes neurais e modelos de IA
-  - Implementação de soluções de IA em produção
+<br>
 
-**Matemática**
-  - Álgebra linear e cálculo
-  - Estatística e probabilidade
-  - Matemática discreta
-  - Otimização e análise numérica
+## Roadmap da minha carreira.. até agora
+
+**[Universidade de Brasília](https://www.unb.br/)**
+  - Aqui foi onde tudo começou. Estou em constante aprendizado sobre diversas áreas da engenharia de software: elicitação, design, construção, teste, manutenção, processos de desenvolvimento e gerência e outros diversos fatores.
+  - O que mais me desperta interesse são algoritmos. Além disso, é com isso que trabalho atualmente na Easy Pallet.
+  - Passei diversos projetos importantes e divertidos, porém o que mais gostei de ter feito parte foi o [Atlas de Oportunidades](https://atlas-oportunidades.nuvem.ufrgs.br/), em parceria com a [UFRGS](https://www.ufrgs.br/site/) e [MIT](https://web.mit.edu/). Foi aqui meu primeiro contato com um projeto real e onde comecei de fato a colocar em prática diversas tecnologias e processos de desenvolvimento.
+  - Participei ativamente do [LATITUDE](https://www.latitude.unb.br/), um laboratório de UnB dedicado no desenvolvimento e manutenção de diversos sistemas do Governo. Entretanto, acabei participando apenas em projetos da AGU.
+
+**[Bento Tecnologia](https://www.linkedin.com/company/bento-tecnologia/)**
+  - De forma independente e sem vínculo de trabalho de fato, atuei como freelancer para a Bento Tecnologia de forma intermitente e em dois projetos distintos: PREVENIT e [SIGE](https://github.com/valdersonjr/SIGE).
+  - PREVENIT: sistema de gerenciamento hospitalar do qual eu participei de umas três issues no máximo.
+  - SIGE: sistema de gerenciamento escolar do qual fui desafiado a construir do zero a um MVP.
+
+**[Easy Pallet](https://easypallet.com.br/)**
+  - É aqui que trabalho atualmente. Pode parecer puxação de saco, mas não é: esse lugar deveria ter um selo de The Greatest Place To Work. Não posso passar por aqui e discorrer sobre sem dar o mérito devido.
+  - Empresa formada por fortes e longas amizades, basicamente uma família. Sempre estão me incentivando a melhorar de forma consistente e paciente. Foi aqui que mais aprendi, e não apenas no que condiz ao profissional porém, mais importante, o pessoal.
+  - Já são um pouco mais de 2 anos na empresa e fui admitido através do Easy Academy.
+  - O Easy Academy é um programa de capacitação profissional ofertado aos estagiários da empresa. Participei durante 1 ano e nele participei de diversos cursos custeados por ela.
+  - Após a contratação, atuei alguns meses como desenvolvedor e depois mudei para a área de algoritmos e IA por recomendação do [Sílvio](https://github.com/mastersilvio) - aka, meu chefe e também a inspiração pra começar esse mini blog. 
 
 
+**[Caixa](http://caixa.gov.br/)**
+- Cena dos próximos capítulos...
 
+<br><br>
+{: style="text-align: center;"}
+Obrigado por ter lido até aqui. Não se esqueça de voltar depois para checar a evolução. :)
+{: style="text-align: center;"}
