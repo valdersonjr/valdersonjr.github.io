@@ -2,7 +2,7 @@ title: Sílvio Meireles Notes
 description: "My Personal Blog"
 author:
   name: "Sílvio Meireles"
-  email: "contato@silviomeireles.dev"
+  email: "contato@valdersonjr.dev"
   url: "mastersilvio.github.io"
   baseurl: /mastersilvio.github.io
 
@@ -27,6 +27,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-owner : "silviomeireles"
+owner : "valdersonjr"
 year : "2023"
 google_analytics: UA-147349907-1

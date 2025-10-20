@@ -5,7 +5,7 @@ tags: [Investimento, Finanças, Carreira]
 translation_key: investment-for-programmers
 ---
 
-<div class="lang-pt">
+<div class="lang-pt" markdown="1">
 
 Para programadores, a tecnologia é a principal fonte de renda. Mas, para garantir uma vida financeira estável, é importante também investir de forma inteligente e eficaz. Neste post, vamos falar sobre como os programadores podem estudar, crescer na carreira, fazer reserva de emergência de 12 meses e investir em renda fixa e variável com foco no longo prazo.
 
@@ -30,7 +30,7 @@ Investir de forma inteligente e eficaz é uma parte importante da vida financeir
 
 </div>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 For programmers, technology is the main source of income. But to ensure a stable financial life, it is also important to invest intelligently and effectively. In this post, we will talk about how programmers can study, grow their careers, build a 12‑month emergency fund, and invest in fixed income and variable income with a long-term focus.
 

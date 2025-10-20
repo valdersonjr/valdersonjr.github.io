@@ -4,7 +4,7 @@ published: true
 tags: [Tecnologia, IA, Desenvolvimento]
 ---
 
-<div class="lang-pt">
+<div class="lang-pt" markdown="1">
 
 ## O que é Vibe Coding?
 
@@ -115,7 +115,7 @@ No entanto, é essencial equilibrar a automação com práticas sólidas de enge
 
 </div>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 ## What is Vibe Coding?
 

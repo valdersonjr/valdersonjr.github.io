@@ -5,8 +5,7 @@
 @import "rouge-base16-dark";
 @import "default_colors";
 
-$body-background: $cod-grey !default;
-$body-foreground: $gallery !default;
+
 $header: $conifer !default;
 $blockquote-color: $silver-chalice !default;
 $blockquote-border: $dove-grey !default;
@@ -14,8 +13,14 @@ $blockquote-border: $dove-grey !default;
 body {
   margin: 0;
   padding: 0;
-  background: $body-background url("../assets/bkg.png") 0 0;
-  color: $body-foreground;
+  /* Efeito granular navy blue usando apenas CSS */
+  background:
+    /* granulado sutil: pontos translúcidos */
+    repeating-radial-gradient(circle at 20% 10%, rgba(255,255,255,0.03) 0, rgba(255,255,255,0.03) 1px, transparent 1px, transparent 20px),
+    repeating-radial-gradient(circle at 80% 70%, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 2px, transparent 2px, transparent 16px),
+    repeating-radial-gradient(circle at 40% 80%, rgba(255,255,255,0.025) 0, rgba(255,255,255,0.025) 1.2px, transparent 1.2px, transparent 18px),
+    radial-gradient(circle, #000080 0%, #121417 100%);
+  color: white;
   font-size: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -50,11 +55,19 @@ li {
 */
 
 header {
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px dashed $conifer; //header;
+  background: rgba(0, 0, 0, 0.08);
+  border-bottom: 1px dashed $dove-grey;
   padding: 20px;
-  margin: 0 0 40px 0;
+  margin: 0 0 32px 0;
   position: relative;
+}
+
+.lang-bar {
+  background: rgba(0, 0, 0, 0.06);
+  border-bottom: 1px dashed $conifer;
+  padding: 6px 0;
+  margin: -30px 0 30px 0; // visually closer to header, before main content
+  font-size: 14px;
 }
 
 .header-links {
@@ -69,7 +82,7 @@ header {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 32px;
   flex-wrap: wrap;
 }
 
@@ -88,14 +101,11 @@ header h1 {
   line-height: 1.5;
   margin: 0;
   text-align: center;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $conifer;//$header;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: $gallery;
+  text-shadow: none;
+  letter-spacing: -0.02em;
 }
 
 header h2 {
@@ -105,25 +115,7 @@ header h2 {
 }
 
 
-/* Theme toggle */
-.theme-toggle {
-  position: static;
-}
-
-.theme-toggle button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px dashed $conifer;
-  border-radius: 999px;
-  padding: 0;
-  cursor: pointer;
-  box-shadow: 0 0 8px rgba(181, 232, 83, 0.25);
-  color: $conifer;
-}
+/* Theme toggle removed */
 
 /* Main Content
 */
@@ -137,13 +129,11 @@ section img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $header;
-  letter-spacing: -0.03em;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
+  font-weight: 700;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: $gallery;
+  letter-spacing: -0.01em;
+  text-shadow: none;
 }
 
 #main_content h1 {
@@ -218,7 +208,7 @@ table {
 
 th {
   text-align: left;
-  border-bottom: 1px dashed #b5e853;
+  border-bottom: 1px dashed $dove-grey;
   padding: 5px 10px;
 }
 
@@ -229,8 +219,8 @@ td {
 hr {
   height: 0;
   border: 0;
-  border-bottom: 1px dashed #b5e853;
-  color: #b5e853;
+  border-bottom: 1px dashed $dove-grey;
+  color: $dove-grey;
 }
 
 /* Buttons
@@ -275,8 +265,8 @@ hr {
 */
 
 a {
-  color: #63c0f5;
-  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+  color: white;
+  text-shadow: none;
 }
 
 a:active, a:focus {
@@ -312,39 +302,26 @@ a:active, a:focus {
   min-height: calc(100vh - 100px);
 }
 
-/* Light theme overrides */
-html.theme-light body {
-  background: #fdfdfd;
-  color: #222;
+/* Light theme overrides removed */
+
+/* Header links must be white and bold */
+header a,
+header .nav-links a,
+header .header-links a,
+header a h2,
+header .header-link {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
 }
 
-html.theme-light header {
-  background: rgba(0, 0, 0, 0.03);
-  border-bottom-color: $conifer;
-}
-
-html.theme-light .theme-toggle button {
-  background: rgba(255, 255, 255, 0.9);
-  border-color: $conifer;
-  box-shadow: 0 0 8px rgba(181, 232, 83, 0.15);
-}
-
-
-html.theme-light h1, html.theme-light h2, html.theme-light h3,
-html.theme-light h4, html.theme-light h5, html.theme-light h6 {
-  text-shadow: none;
-}
-
-html.theme-light pre {
-  background: #f6f8fa;
-  border-color: #ddd;
-  color: #333;
-}
-
-html.theme-light code.highlighter-rouge {
-  background: #f6f8fa;
-  border-color: #ddd;
-  color: #c7254e;
+header a:hover,
+header .nav-links a:hover,
+header .header-links a:hover,
+header a:hover h2,
+header .header-link:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
 }
 
 /* Responsiveness */

@@ -14,3 +14,199 @@
   margin: 0 auto;
   display: block;
 }
+
+/* Layout: viewport-bound gradient + sticky footer with scroll */
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #0d1117;
+  position: relative;
+}
+
+#wrapper {
+  flex: 1 0 auto;
+  min-height: auto;
+  overflow-y: auto;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure content never sits under the fixed footer */
+.container {
+  padding-bottom: 40px;
+  max-width: 1100px;
+  width: 93%;
+}
+
+.pagination {
+  flex-shrink: 0;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+/* Keep header always visible - clean style */
+header {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #0d1117 !important;
+  border-bottom: 1px solid #30363d !important;
+  margin: 0 !important;
+}
+
+/* Header links styling */
+header a,
+header .nav-links a,
+header .header-links a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700 !important;
+  letter-spacing: 0.05em;
+}
+
+header a:hover,
+header .nav-links a:hover,
+header .header-links a:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+  text-decoration: none !important;
+}
+
+/* Keep footer always visible - clean style */
+footer {
+  flex-shrink: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #0d1117;
+  border-top: 1px solid #30363d;
+}
+
+footer a {
+  color: #8b949e !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #c9d1d9 !important;
+}
+
+/* Text justification for content */
+#main_content p,
+#main_content li,
+#main_content blockquote {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+}
+
+/* Home posts styling - Clean minimal layout */
+.home-posts li {
+  margin-bottom: 40px;
+  padding: 24px 0;
+  border-bottom: 1px solid #21262d;
+  list-style: none;
+  transition: padding-left 0.2s ease;
+}
+
+.home-posts li:hover {
+  padding-left: 8px;
+}
+
+.home-posts li:last-child {
+  margin-bottom: 0;
+}
+
+/* Titles on home page - clean style */
+.home-posts h2,
+.home-posts h2 a {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #c9d1d9;
+}
+
+/* Remove underline from home titles */
+.home-posts h2 a,
+.home-posts h2 a:hover,
+.home-posts h2 a:focus {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Date styling - minimal */
+.home-posts time {
+  display: block;
+  font-size: 13px;
+  color: #8b949e;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+/* Post preview text */
+.home-posts p {
+  color: #8b949e;
+  line-height: 1.6;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #wrapper {
+    padding-top: 100px; /* reduce header padding on mobile */
+  }
+  
+  .home-posts li {
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+  
+  .home-posts h2,
+  .home-posts h2 a {
+    font-size: 18px;
+  }
+  
+  header a,
+  header .nav-links a,
+  header .header-links a {
+    font-size: 16px !important;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improved link hover on all pages */
+#main_content a {
+  transition: color 0.2s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#main_content a:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Disqus spacing */
+#disqus_thread {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid #30363d;
+}

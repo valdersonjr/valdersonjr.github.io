@@ -5,7 +5,7 @@ translation_key: home
 ---
 
 {% assign pt_posts = site.posts | where: 'lang', 'pt' %}
-<ul>
+<ul class="home-posts">
   {% for post in pt_posts %}
     <li>
       <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>

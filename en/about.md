@@ -5,7 +5,7 @@ translation_key: about
 permalink: /en/about/
 ---
 
-![Sílvio Meireles](/assets/silviomeireles.jpg){: .center-image }
+![valdersonjr](/assets/valdersonjr.jpeg){: .center-image }
 [Github](https://github.com/mastersilvio)
 [LinkedIn](https://www.linkedin.com/in/mastersilvio/)
 [Twitter](https://twitter.com/silviojmeireles)

@@ -2,7 +2,7 @@
   "name" : "Sílvio Meireles Notes",
   "short_name" : "Sílvio Notes",
   "description" : "Blog sobre desenvolvimento de software, empreendedorismo, carreira e filosofia.",
-  "start_url" : "https://silviomeireles.dev/",
+  "start_url" : "https://valdersonjr.dev/",
   "display" : "fullscreen",
   "orientation" : "any",
   "scope" : "/",
@@ -11,7 +11,7 @@
   "background_color": "#151515",
   "icons" :   [
     {
-      "src": "/assets/logo-silviomeireles.png",
+      "src": "/assets/logo-valdersonjr.png",
       "sizes": "512x512",
       "type": "image/png"
     }

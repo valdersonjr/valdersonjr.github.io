@@ -5,7 +5,7 @@ tags: [Tecnologia, Probabilidade, Matemática]
 translation_key: monty-hall
 ---
 
-<div class="lang-pt">
+<div class="lang-pt" markdown="1">
 
 ## Introdução
 
@@ -25,7 +25,7 @@ Portanto, trocar de porta aumenta suas chances de ganhar para 2/3!
 
 </div>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 ## Introduction
 
