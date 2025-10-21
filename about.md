@@ -33,7 +33,7 @@ Um pouco sobre mim:
 
 ## Algumas conquistas pessoais que me deixam feliz
 - Medalhista de bronze, prata e ouro da MOBFOG. Participei da competição no Rio de Janeiro. (2015, 2016 e 2017)
-- Fui medalhista de bronze em uma competição na Índia no International Youth Math Challenge (IYMC). (2016)
+- Fui medalhista de bronze no International Youth Math Challenge (IYMC), evento realizado na Índia. (2016)
 - Participante do [Goiás Sem Fronteiras](https://goias.gov.br/institucional/goias-sem-fronteira/). (2017)
 - Aprovado na Universidade de Brasília para Engenharia de Software (2019)
 - Mestre no League of Legends (2022)
@@ -55,7 +55,7 @@ Um pouco sobre mim:
 
 **[Easy Pallet](https://easypallet.com.br/)**
   - É aqui que trabalho atualmente e esse lugar deveria ter um selo de The Greatest Place To Work. Tenho que dar o devido mérito.
-  - Empresa formada por fortes e longas amizades, basicamente uma família. Sempre estão me incentivando a melhorar de forma consistente e paciente. Foi aqui que mais aprendi, e não apenas no que condiz ao profissional porém, mais importante, o pessoal.
+  - Empresa formada por fortes e longas amizades, basicamente uma família. Sempre estão me incentivando a melhorar de forma consistente e paciente. Foi aqui que mais aprendi, e não apenas no que condiz ao profissional, porém, mais importante, o pessoal.
   - Já são um pouco mais de 2 anos na empresa e fui admitido através do Easy Academy.
   - O Easy Academy é um programa de capacitação profissional ofertado aos estagiários da empresa. Participei durante 1 ano e nele realizei de diversos cursos custeados pela Easy.
   - Após a contratação, atuei alguns meses como desenvolvedor e depois mudei para a área de algoritmos e IA por recomendação do [Sílvio](https://github.com/mastersilvio) - aka, meu chefe e também a inspiração pra começar esse mini blog. 
@@ -66,5 +66,5 @@ Um pouco sobre mim:
 
 <br><br>
 {: style="text-align: center;"}
-Obrigado por ter lido até aqui. Não se esqueça de voltar depois para checar a evolução. :)
+Obrigado por ter lido até aqui :)
 {: style="text-align: center;"}
