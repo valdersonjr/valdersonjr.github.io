@@ -23,8 +23,8 @@ Bem-vindo ao meu pequeno universo.
 <br>
 <br>
 Um pouco sobre mim:
-  - Sempre gostei muito de matemática. Minto! Gosto muito e espontaneamente da **lógica** matemática, principalmente por envolver reconhecimento e entendimento de padrões.
-  - Você consegue me fazer horas conversando sobre a vida, verdade e universo. Assuntos filosóficos me despertam bastante interesse.
+  - Sempre gostei muito de matemática. Minto! O que gosto muito e espontaneamente é da **lógica** matemática, principalmente por envolver reconhecimento e entendimento de padrões.
+  - Você conseguiria me fazer ficar horas conversando sobre a vida, a verdade e o universo. Assuntos filosóficos me despertam bastante interesse.
   - Me senti por muito tempo uma falha como desenvolvedor por um simples motivo: não gosto de café. Faço uso pelo simples interesse de ficar desperto.
   - Por fim, caso ainda não tenha ficado muito claro, amo gatinhos. São bolinhas fofas de pelo e bastante engraçados.
 
@@ -45,7 +45,7 @@ Um pouco sobre mim:
 **[Universidade de Brasília](https://www.unb.br/)**
   - Aqui foi onde tudo começou. Estou em constante aprendizado sobre diversas áreas da engenharia de software: elicitação, design, construção, teste, manutenção, processos de desenvolvimento e gerência e outros diversos fatores.
   - O que mais me desperta interesse são algoritmos. Além disso, é com isso que trabalho atualmente na Easy Pallet.
-  - Passei diversos projetos importantes e divertidos, porém o que mais gostei de ter feito parte foi o [Atlas de Oportunidades](https://atlas-oportunidades.nuvem.ufrgs.br/), em parceria com a [UFRGS](https://www.ufrgs.br/site/) e [MIT](https://web.mit.edu/). Foi aqui meu primeiro contato com um projeto real e onde comecei de fato a colocar em prática diversas tecnologias e processos de desenvolvimento.
+  - Passei diversos projetos importantes e divertidos, porém o que mais gostei de ter feito parte foi o [Atlas de Oportunidades](https://atlas-oportunidades.nuvem.ufrgs.br/), em parceria com a [UFRGS](https://www.ufrgs.br/site/) e [MIT](https://web.mit.edu/). Foi aqui o meu primeiro contato com um projeto real e onde comecei de fato a colocar em prática diversas tecnologias e processos de desenvolvimento.
   - Participei ativamente do [LATITUDE](https://www.latitude.unb.br/), um laboratório de UnB dedicado no desenvolvimento e manutenção de diversos sistemas do Governo. Entretanto, acabei participando apenas em projetos da AGU.
 
 **[Bento Tecnologia](https://www.linkedin.com/company/bento-tecnologia/)**
