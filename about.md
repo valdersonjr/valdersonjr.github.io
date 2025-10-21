@@ -26,17 +26,19 @@ Um pouco sobre mim:
   - Sempre gostei muito de matemática. Minto! O que gosto muito e espontaneamente é da **lógica** matemática, principalmente por envolver reconhecimento e entendimento de padrões.
   - Você conseguiria me fazer ficar horas conversando sobre a vida, a verdade e o universo. Assuntos filosóficos me despertam bastante interesse.
   - Não gosto de café. Faço uso pelo simples interesse de ficar desperto.
+  - Morei na Irlanda dos meus 6 aos 10 anos.
+  - Meu objetivo é melhorar um pouco todo dia e ver até onde chego.
   - Por fim, caso ainda não tenha ficado muito claro, amo gatinhos. São bolinhas fofas de pelo e bastante engraçados.
-
 <br>
 
 ## Algumas conquistas pessoais que me deixam feliz
-- Medalhista de bronze, prata e ouro da MOBFOG
-- Medalhista de bronze em uma competição internacional de matemática
-- Participante do Goiás Sem Fronteiras
-- Aprovado na Universidade de Brasília para Engenharia de Software
-- Aprovado no Concurso da Caixa
-- Fortes amizades e amor pela minha família
+- Medalhista de bronze, prata e ouro da MOBFOG. Participei da competição no Rio de Janeiro. (2015, 2016 e 2017)
+- Fui medalhista de bronze em uma competição na Índia no International Youth Math Challenge (IYMC). (2016)
+- Participante do [Goiás Sem Fronteiras](https://goias.gov.br/institucional/goias-sem-fronteira/). (2017)
+- Aprovado na Universidade de Brasília para Engenharia de Software (2019)
+- Mestre no League of Legends (2022)
+- Aprovado no Concurso da Caixa (2024)
+- Fortes amizades e amor pela minha família (1999)
 
 <br>
 
