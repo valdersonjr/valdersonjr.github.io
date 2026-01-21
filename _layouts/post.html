@@ -8,6 +8,27 @@ comments: true
   <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
   {{ content }}
 
+  <nav class="post-nav" aria-label="Navegação entre posts">
+    {% if page.previous %}
+      <a class="post-nav__link post-nav__link--older" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="post-nav__kicker">&larr; Mais antigo</span>
+        <span class="post-nav__title">{{ page.previous.title }}</span>
+      </a>
+    {% endif %}
+
+    <a class="post-nav__link post-nav__link--index" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
+      <span class="post-nav__kicker">Índice</span>
+      <span class="post-nav__title">Ver todos os posts</span>
+    </a>
+
+    {% if page.next %}
+      <a class="post-nav__link post-nav__link--newer" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="post-nav__kicker">Mais recente &rarr;</span>
+        <span class="post-nav__title">{{ page.next.title }}</span>
+      </a>
+    {% endif %}
+  </nav>
+
   <div id="disqus_thread"></div>
   <script>
 

@@ -4,7 +4,7 @@ lang: pt
 translation_key: home
 ---
 
-{% assign pt_posts = site.posts | where: 'lang', 'pt' %}
+{% assign pt_posts = site.posts | where: 'lang', 'pt' | sort: 'date' | reverse %}
 <ul class="home-posts">
   {% for post in pt_posts %}
     <li>

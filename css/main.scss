@@ -85,11 +85,7 @@ header .header-links a:hover {
 /* Keep footer always visible - clean style */
 footer {
   flex-shrink: 0;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1000;
+  position: relative;
   background: #0d1117;
   border-top: 1px solid #30363d;
 }
@@ -111,6 +107,103 @@ footer a:hover {
   text-align: justify;
   text-justify: inter-word;
   hyphens: auto;
+}
+
+/* Better visual separation between sections inside posts/pages (but not on the home posts list) */
+#main_content h2,
+#main_content h3,
+#main_content h4 {
+  scroll-margin-top: 140px; /* header is fixed */
+}
+
+/* Section blocks: add breathing room and a subtle divider */
+#main_content article h2:not(:first-child) {
+  margin-top: 56px;
+  padding-top: 18px;
+  border-top: 1px solid #21262d;
+}
+
+/* First heading in an article should not have a divider */
+#main_content article h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+#main_content article h3 {
+  margin-top: 28px;
+}
+
+#main_content article h4 {
+  margin-top: 22px;
+}
+
+/* Ensure home page list titles don't get section dividers/margins */
+#main_content .home-posts h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* Nicer horizontal rule spacing when used inside posts */
+#main_content hr {
+  margin: 36px 0;
+  border-bottom-color: #30363d;
+}
+
+/* Post prev/next navigation */
+.post-nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 44px;
+  padding-top: 18px;
+  border-top: 1px solid #21262d;
+}
+
+.post-nav__link {
+  display: block;
+  padding: 14px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(13, 17, 23, 0.35);
+  text-decoration: none !important;
+}
+
+.post-nav__link:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(13, 17, 23, 0.55);
+}
+
+.post-nav__kicker {
+  display: block;
+  font-size: 12px;
+  color: #8b949e;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.post-nav__title {
+  display: block;
+  color: #c9d1d9;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.post-nav__link--older { text-align: left; }
+.post-nav__link--newer { text-align: right; }
+.post-nav__link--index { text-align: center; }
+
+@media (max-width: 640px) {
+  .post-nav {
+    grid-template-columns: 1fr;
+  }
+  .post-nav__link--newer,
+  .post-nav__link--index {
+    text-align: left;
+  }
 }
 
 /* Home posts styling - Clean minimal layout */
