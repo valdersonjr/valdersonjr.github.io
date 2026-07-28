@@ -1,31 +1,19 @@
-# Jekyll build output
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-_example_posts
-
-# Sistema operacional
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Arquivos de ambiente
-.env
-.env.local
-.tool-versions
-
-# Dependências
+# build output
+dist/
+# generated types & cache
+.astro/
+# dependencies
 node_modules/
-vendor/
-.bundle/
-
-# IDEs e editores
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+# environment variables
+.env
+.env.production
+# macOS
+.DS_Store
+# jetbrains / editors
 .idea/
 .vscode/
-*.swp
-*.swo
-*~
-
-# Arquivos de log
-*.log

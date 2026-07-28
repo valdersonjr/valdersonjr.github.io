@@ -1,0 +1,49 @@
+# Pages CMS (https://pagescms.org) — editor web pra postar pelo navegador.
+# Depois de autorizar este repositório em https://app.pagescms.org, você escreve,
+# faz upload de imagem e publica sem sair do navegador; o commit vai direto pro repo
+# e o GitHub Actions publica o site.
+
+media:
+  input: public/assets # onde os uploads ficam salvos no repositório
+  output: /assets # ...e como são referenciados no site (URL pública)
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/content/posts
+    format: yaml-frontmatter
+    filename: '{primary}.md' # nome do arquivo = slug da URL, gerado do título
+    view:
+      fields: [title, date, published]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+      - name: date
+        label: Data
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: description
+        label: Resumo (opcional)
+        type: text
+        description: Aparece na home e na busca. Se ficar vazio, é gerado do texto.
+      - name: published
+        label: Publicado
+        type: boolean
+        default: true
+      - name: body
+        label: Conteúdo
+        type: rich-text

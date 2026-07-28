@@ -1,0 +1,15 @@
+{
+  "name": "valderson • notas",
+  "short_name": "valderson",
+  "description": "Um blog para aprendizados e pensamentos.",
+  "start_url": "/",
+  "display": "standalone",
+  "lang": "pt-BR",
+  "theme_color": "#1c7a4f",
+  "background_color": "#faf7f2",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
