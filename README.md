@@ -33,7 +33,7 @@ public/              # arquivos servidos como estão (CNAME, favicon, ícones, i
 
 ## Publicando pelo navegador (Pages CMS)
 
-Jeito recomendado — 100% no navegador, sem terminal:
+Jeito recomendado, 100% no navegador e sem terminal:
 
 1. Tenha este repositório no GitHub (incluindo o `.pages.yml` da raiz).
 2. Abra **[app.pagescms.org](https://app.pagescms.org)**, entre com o GitHub e
@@ -55,7 +55,7 @@ title: 'Título do post'
 date: 2026-02-10 09:00:00 -0300
 tags: [Financeiro]
 published: true          # opcional (padrão: true)
-description: 'Resumo…'   # opcional; se ausente, é gerado do texto
+description: 'Resumo'    # opcional; se ausente, é gerado do texto
 ---
 ```
 

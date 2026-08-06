@@ -18,7 +18,7 @@ const {
 const siteName = 'valderson • notas';
 const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '') || Astro.site!.href;
 const ogImage = new URL(image, Astro.site).href;
-const fullTitle = title === siteName ? title : `${title} — valderson`;
+const fullTitle = title === siteName ? title : `${title} | valderson`;
 ---
 
 <meta charset="utf-8" />

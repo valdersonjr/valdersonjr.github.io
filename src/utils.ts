@@ -56,5 +56,5 @@ export function excerpt(markdown: string, maxWords = 32): string {
     .replace(/\s+/g, ' ')
     .trim();
   const words = plain.split(' ');
-  return words.length > maxWords ? words.slice(0, maxWords).join(' ') + '…' : plain;
+  return words.length > maxWords ? words.slice(0, maxWords).join(' ') + '...' : plain;
 }
