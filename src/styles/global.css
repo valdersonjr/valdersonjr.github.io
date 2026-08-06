@@ -404,7 +404,12 @@ a.tag:hover { color: var(--text); border-color: var(--accent); }
 
 .prose { font-size: var(--step-0); line-height: 1.75; color: var(--text); }
 .prose > * + * { margin-top: 1.35em; }
-.prose p { text-wrap: pretty; }
+.prose p, .prose li { text-wrap: pretty; text-align: justify; hyphens: auto; }
+/* Justificado em coluna estreita abre rios de espaco em branco: no mobile,
+   volta pro alinhamento a esquerda. */
+@media (max-width: 560px) {
+  .prose p, .prose li { text-align: left; hyphens: none; }
+}
 
 .prose h2 {
   font-size: var(--step-2);
