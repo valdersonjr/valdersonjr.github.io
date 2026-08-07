@@ -477,6 +477,13 @@ a.tag:hover { color: var(--text); border-color: var(--accent); }
 
 .prose img { border-radius: var(--radius); border: 1px solid var(--border); margin-inline: auto; }
 
+/* `++campo++` no Markdown. Afasta o traço da linha de base pra não colar nos
+   descendentes de letras como o "j" de campos tipo pedido_id. */
+.prose u {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
 .prose hr { border: 0; border-top: 1px solid var(--border); margin-block: var(--space-lg); }
 
 .prose table { width: 100%; border-collapse: collapse; font-size: 0.95em; }

@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import remarkUnderline from './plugins/remark-underline.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -33,6 +34,8 @@ export default defineConfig({
   ],
 
   markdown: {
+    // `++texto++` -> <u>texto</u>, pro sublinhado da chave primária nos exemplos.
+    remarkPlugins: [remarkUnderline],
     shikiConfig: {
       theme: 'github-dark-dimmed',
       wrap: true,
