@@ -22,14 +22,49 @@ npm run preview  # serve o build de produção localmente
 
 ```
 src/
-  content/posts/     # os posts, um .md por artigo (o nome do arquivo é a URL)
-  content.config.ts  # schema/validação do frontmatter dos posts
-  pages/             # rotas (index, [slug], about, archive, tags, 404, feeds)
+  content/posts/     # os posts em português, um .md por artigo (o arquivo é a URL)
+  content/en/        # as versões em inglês, servidas em /en/<slug>
+  content.config.ts  # schema/validação do frontmatter das duas coleções
+  i18n.ts            # strings da interface em PT e EN
+  posts.ts           # leitura dos posts por idioma e o par PT<->EN
+  pages/             # rotas em português (index, [slug], about, archive, tags, 404, feeds)
+  pages/en/          # as mesmas rotas em inglês
   layouts/           # BaseLayout
-  components/        # Header, Footer, BaseHead, PostCard, ThemeToggle
+  components/        # Header, Footer, BaseHead, ThemeToggle, PostCard
+                     # + HomePage/ArchivePage/TagsPage/PostPage, compartilhados
+                     #   pelos dois idiomas via prop `lang`
   styles/global.css  # design system (tokens, tipografia, claro/escuro)
 public/              # arquivos servidos como estão (CNAME, favicon, ícones, imagens)
 ```
+
+## Idiomas
+
+O português fica na raiz (`/meu-post`) e o inglês sob `/en` (`/en/my-post`). O PT
+não tem prefixo de propósito: as URLs antigas continuam valendo.
+
+Os posts são escritos **só em português**. A versão em inglês é derivada: depois de
+publicar o post em PT, rode no Claude Code
+
+```
+/traduzir <slug-do-post>
+```
+
+que gera `src/content/en/<slug-em-ingles>.md` já com o campo que liga as duas
+versões:
+
+```yaml
+translationOf: normalizacao-ate-fnbc-e-quando-desnormalizar-de-proposito
+```
+
+É esse campo que alimenta o seletor de idioma do menu e as tags `hreflang`. Sem
+ele o post em inglês continua funcionando, só fica sem par. As regras da tradução
+(tom, o que não traduzir, o que nunca acrescentar) ficam em
+`.claude/skills/traduzir/SKILL.md`.
+
+O Pages CMS também lista a coleção **Posts (EN)** — serve pra corrigir uma frase
+pelo navegador, não pra escrever do zero. Cada idioma tem seu próprio feed
+(`/rss.xml` e `/en/rss.xml`), então ninguém passa a receber posts num idioma que
+não assinou.
 
 ## Publicando pelo navegador (Pages CMS)
 

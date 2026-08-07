@@ -1,0 +1,61 @@
+---
+// Tag index shared by `/tags` and `/en/tags`.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDayMonth } from '../utils';
+import { getPosts, postPath, type Post } from '../posts';
+import { locales, useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const posts = await getPosts(lang);
+
+const tagMap = new Map<string, Post[]>();
+for (const post of posts) {
+  for (const tag of post.data.tags) {
+    if (!tagMap.has(tag)) tagMap.set(tag, []);
+    tagMap.get(tag)!.push(post);
+  }
+}
+const tags = [...tagMap.keys()].sort((a, b) => a.localeCompare(b, locales[lang]));
+const tagsPath = lang === 'en' ? '/en/tags' : '/tags';
+---
+
+<BaseLayout title={t['tags.title']} description={t['tags.description']}>
+  <section class="wrap page-intro">
+    <span class="page-intro__eyebrow">{t['tags.eyebrow']}</span>
+    <h1 class="page-intro__title">{t['tags.heading']}</h1>
+    <div class="tags" style="margin-top: var(--space-md);">
+      {
+        tags.map((tag) => (
+          <a class="tag" href={`${tagsPath}#${tag.toLowerCase()}`}>
+            {tag} · {tagMap.get(tag)!.length}
+          </a>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="wrap--content">
+    {
+      tags.map((tag) => (
+        <div class="archive-year" id={tag.toLowerCase()}>
+          <div class="archive-year__label">#{tag}</div>
+          <ul class="archive-list">
+            {tagMap.get(tag)!.map((post) => (
+              <li class="archive-row">
+                <time datetime={post.data.date.toISOString()}>
+                  {formatDayMonth(post.data.date, lang)}
+                </time>
+                <a href={postPath(post.id, lang)}>{post.data.title}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </section>
+</BaseLayout>

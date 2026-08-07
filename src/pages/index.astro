@@ -1,37 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import PostCard from '../components/PostCard.astro';
-
-const posts = (await getCollection('posts', ({ data }) => data.published !== false)).sort(
-  (a, b) => b.data.date.getTime() - a.data.date.getTime(),
-);
+import HomePage from '../components/HomePage.astro';
 ---
 
-<BaseLayout title="valderson • notas">
-  <section class="wrap page-intro">
-    <span class="page-intro__eyebrow">aprendizados &amp; pensamentos</span>
-    <h1 class="page-intro__title">Um cantinho pra pensar em voz alta.</h1>
-    <p class="page-intro__lead">
-      Anoto aqui o que ando aprendendo, lendo e tentando entender melhor. Sem tema fixo, sem pressa.
-    </p>
-  </section>
-
-  <section class="wrap">
-    {
-      posts.length > 0 ? (
-        <ul class="post-list">
-          {posts.map((post) => (
-            <li class="post-list__item">
-              <PostCard post={post} />
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p class="lead" style="padding-block: var(--space-lg);">
-          Ainda não há posts por aqui, mas já já tem. 🐾
-        </p>
-      )
-    }
-  </section>
-</BaseLayout>
+<HomePage lang="pt" />

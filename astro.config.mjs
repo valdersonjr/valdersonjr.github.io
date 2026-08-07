@@ -13,7 +13,24 @@ export default defineConfig({
   trailingSlash: 'never',
   build: { format: 'file' },
 
-  integrations: [mdx(), sitemap()],
+  // Portuguese stays unprefixed at the root so every existing URL keeps working;
+  // English lives under `/en`.
+  i18n: {
+    defaultLocale: 'pt',
+    locales: ['pt', 'en'],
+    routing: { prefixDefaultLocale: false },
+  },
+
+  integrations: [
+    mdx(),
+    // Emits the hreflang alternates in the sitemap from the `/en` prefix.
+    sitemap({
+      i18n: {
+        defaultLocale: 'pt',
+        locales: { pt: 'pt-BR', en: 'en-US' },
+      },
+    }),
+  ],
 
   markdown: {
     shikiConfig: {

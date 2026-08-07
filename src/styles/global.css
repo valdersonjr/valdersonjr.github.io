@@ -252,6 +252,18 @@ main { flex: 1 0 auto; }
   background: var(--accent);
 }
 
+/* Seletor de idioma: pesa menos que os links de navegação, que são o conteúdo. */
+.lang-switch {
+  font-size: 0.78rem;
+  font-weight: 640;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm, 0.4rem);
+  line-height: 1.4;
+}
+.lang-switch:hover { border-color: var(--border-strong); }
+
 .theme-toggle {
   display: inline-grid;
   place-items: center;

@@ -1,0 +1,131 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import avatar from '../../assets/valdersonjr.jpeg';
+---
+
+<BaseLayout
+  title="About"
+  description="Valderson Junior, software engineer, curious about logic, philosophy and (very much) about cats."
+>
+  <section class="wrap page-intro center">
+    <span class="page-intro__eyebrow">about</span>
+    <h1 class="page-intro__title">Hi, I'm Valderson.</h1>
+    <p class="page-intro__lead" style="margin-inline: auto;">
+      And this little mustached guy is Luigi. Welcome to my little corner of the internet.
+    </p>
+    <Image src={avatar} alt="Valderson and his cat Luigi" class="avatar" width={336} height={336} />
+    <p class="tags" style="justify-content: center;">
+      <a class="tag" href="https://github.com/valdersonjr" target="_blank" rel="me noopener">GitHub</a>
+      <a class="tag" href="https://www.linkedin.com/in/valdersonjr/" target="_blank" rel="me noopener">LinkedIn</a>
+    </p>
+  </section>
+
+  <section class="wrap--content prose">
+    <h2>A bit about me</h2>
+    <ul>
+      <li>
+        I have always liked mathematical logic a lot, mainly because it involves recognizing and
+        understanding patterns.
+      </li>
+      <li>
+        You could get me to spend hours talking about life, truth and the universe. Philosophical
+        subjects spark a lot of interest in me.
+      </li>
+      <li>I do not like coffee. I drink it purely out of an interest in staying awake.</li>
+      <li>I lived in Ireland from the age of 6 to 10.</li>
+      <li>My goal is to get a little better every day and see how far I can go.</li>
+      <li>
+        Finally, I love cats. They are fluffy little balls of fur and quite funny.
+      </li>
+    </ul>
+
+    <h2>A few achievements that make me happy</h2>
+    <ul>
+      <li>
+        Bronze, silver and gold medalist at MOBFOG. I took part in the competition in Rio de Janeiro
+        (2015, 2016 and 2017).
+      </li>
+      <li>
+        Bronze medalist at the International Youth Math Challenge (IYMC), in India (2016).
+      </li>
+      <li>
+        Participant in the
+        <a href="https://goias.gov.br/institucional/goias-sem-fronteira/" target="_blank" rel="noopener">
+          Goiás Sem Fronteiras</a> program (2017).
+      </li>
+      <li>Admitted to the University of Brasília for Software Engineering (2019).</li>
+      <li>Master in League of Legends (2022).</li>
+      <li>Passed the Caixa public service exam (2024).</li>
+      <li>Strong friendships and love for my family (1999).</li>
+    </ul>
+
+    <h2>My career roadmap, so far</h2>
+
+    <h3><a href="https://www.unb.br/" target="_blank" rel="noopener">University of Brasília</a></h3>
+    <ul>
+      <li>
+        Where it all started. I am constantly learning about several areas of software engineering:
+        elicitation, design, construction, testing, maintenance, development processes and
+        management, among others.
+      </li>
+      <li>
+        I went through many important and fun projects, but the one I enjoyed the most was the
+        <a href="https://atlas-oportunidades.nuvem.ufrgs.br/" target="_blank" rel="noopener">
+          Atlas de Oportunidades</a>, in partnership with
+        <a href="https://www.ufrgs.br/site/" target="_blank" rel="noopener">UFRGS</a> and
+        <a href="https://web.mit.edu/" target="_blank" rel="noopener">MIT</a>. It was my first
+        contact with a real project and where I actually started putting into practice what I was
+        learning.
+      </li>
+      <li>
+        I took an active part in
+        <a href="https://www.latitude.unb.br/" target="_blank" rel="noopener">LATITUDE</a>, a lab at
+        UnB dedicated to developing and maintaining government systems, working on projects for the
+        AGU.
+      </li>
+    </ul>
+
+    <h3>
+      <a href="https://www.linkedin.com/company/bento-tecnologia/" target="_blank" rel="noopener">
+        Bento Tecnologia</a>
+    </h3>
+    <ul>
+      <li>
+        Independently, I worked as a freelancer for Bento on two projects: PREVENIT (hospital
+        management) and SIGE (school management).
+      </li>
+      <li>Bento is a nice guy and acted directly as the stakeholder for the projects.</li>
+    </ul>
+
+    <h3><a href="https://easypallet.com.br/" target="_blank" rel="noopener">Easy Pallet</a></h3>
+    <ul>
+      <li>
+        It is where I work today, and this place deserved a <em>The Greatest Place To Work</em>
+        badge.
+      </li>
+      <li>
+        A company built on strong, long friendships, practically a family. This is where I learned
+        the most, and not only professionally: mostly personally.
+      </li>
+      <li>
+        It has been more than 2 years at the company. I joined through Easy Academy, a training
+        program offered to interns, in which I took several courses paid for by Easy.
+      </li>
+      <li>
+        After being hired, I worked a few months as a developer and moved to the algorithms and AI
+        area on a recommendation from
+        <a href="https://github.com/mastersilvio" target="_blank" rel="noopener">Sílvio</a>, my
+        manager and also the inspiration to start this mini blog.
+      </li>
+    </ul>
+
+    <h3><a href="http://caixa.gov.br/" target="_blank" rel="noopener">Caixa</a></h3>
+    <ul>
+      <li>Scenes from the next chapters.</li>
+    </ul>
+
+    <hr />
+    <p class="center"><em>Thanks for reading this far :)</em></p>
+  </section>
+</BaseLayout>

@@ -17,3 +17,5 @@ pnpm-debug.log*
 # jetbrains / editors
 .idea/
 .vscode/
+# claude code: a skill de tradução é versionada, as permissões locais não
+.claude/settings.local.json

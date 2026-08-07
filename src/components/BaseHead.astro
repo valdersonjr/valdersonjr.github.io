@@ -1,30 +1,51 @@
 ---
 import { ClientRouter } from 'astro:transitions';
+import { cleanPath, useTranslations, type Lang } from '../i18n';
 
 interface Props {
   title: string;
   description?: string;
   image?: string;
   article?: boolean;
+  lang: Lang;
+  /** Same page in the other language, or null when there is no counterpart. */
+  alternate?: string | null;
 }
 
-const {
-  title,
-  description = 'Um blog para aprendizados e pensamentos.',
-  image = '/assets/valdersonjr.jpeg',
-  article = false,
-} = Astro.props;
+const { title, image = '/assets/valdersonjr.jpeg', article = false, lang, alternate } = Astro.props;
 
-const siteName = 'valderson • notas';
-const canonical = new URL(Astro.url.pathname, Astro.site).href.replace(/\/$/, '') || Astro.site!.href;
+const t = useTranslations(lang);
+const description = Astro.props.description ?? t['site.description'];
+const siteName = t['site.name'];
+
+const canonical = new URL(cleanPath(Astro.url), Astro.site).href.replace(/\/$/, '') || Astro.site!.href;
 const ogImage = new URL(image, Astro.site).href;
 const fullTitle = title === siteName ? title : `${title} | valderson`;
+
+const feed = lang === 'en' ? '/en/rss.xml' : '/rss.xml';
+const ogLocale = { pt: 'pt_BR', en: 'en_US' };
+const other: Lang = lang === 'en' ? 'pt' : 'en';
+
+// hreflang only makes sense when both versions of this page exist.
+const alternateUrl = alternate ? new URL(alternate, Astro.site).href.replace(/\/$/, '') : null;
+const ptUrl = lang === 'pt' ? canonical : alternateUrl;
+const enUrl = lang === 'en' ? canonical : alternateUrl;
 ---
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="generator" content={Astro.generator} />
 <link rel="canonical" href={canonical} />
+
+{
+  ptUrl && enUrl && (
+    <>
+      <link rel="alternate" hreflang="pt-BR" href={ptUrl} />
+      <link rel="alternate" hreflang="en" href={enUrl} />
+      <link rel="alternate" hreflang="x-default" href={ptUrl} />
+    </>
+  )
+}
 
 <title>{fullTitle}</title>
 <meta name="title" content={fullTitle} />
@@ -38,7 +59,8 @@ const fullTitle = title === siteName ? title : `${title} | valderson`;
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={ogImage} />
-<meta property="og:locale" content="pt_BR" />
+<meta property="og:locale" content={ogLocale[lang]} />
+{alternateUrl && <meta property="og:locale:alternate" content={ogLocale[other]} />}
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -54,7 +76,7 @@ const fullTitle = title === siteName ? title : `${title} | valderson`;
 <meta name="theme-color" content="#121310" media="(prefers-color-scheme: dark)" />
 
 <!-- Feed -->
-<link rel="alternate" type="application/rss+xml" title="valderson • notas" href="/rss.xml" />
+<link rel="alternate" type="application/rss+xml" title={siteName} href={feed} />
 
 <!-- Set theme before paint to avoid a flash -->
 <script is:inline>

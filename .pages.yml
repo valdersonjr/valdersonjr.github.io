@@ -47,3 +47,50 @@ content:
       - name: body
         label: Conteúdo
         type: rich-text
+
+  # Versões em inglês. Ficam em outra pasta e são servidas em /en/<slug>.
+  - name: posts_en
+    label: Posts (EN)
+    type: collection
+    path: src/content/en
+    format: yaml-frontmatter
+    filename: '{primary}.md' # nome do arquivo = slug da URL, gerado do título
+    view:
+      fields: [title, date, published]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: description
+        label: Summary (optional)
+        type: text
+        description: Aparece na home e na busca. Se ficar vazio, é gerado do texto.
+      - name: translationOf
+        label: Post em português (slug)
+        type: string
+        description: >-
+          Nome do arquivo da versão em PT, sem o .md. É o que liga as duas
+          versões pro seletor de idioma e pras tags hreflang.
+      - name: published
+        label: Published
+        type: boolean
+        default: true
+      - name: body
+        label: Content
+        type: rich-text

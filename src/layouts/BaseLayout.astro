@@ -6,28 +6,48 @@ import '../styles/global.css';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { getLang, locales, useTranslations, switchPath } from '../i18n';
 
 interface Props {
   title: string;
   description?: string;
   image?: string;
   article?: boolean;
+  /**
+   * Equivalent page in the other language. Static pages resolve it from the
+   * path; posts pass it explicitly, since a translated title changes the slug.
+   * `null` means "no counterpart" and points the switcher at that language's home.
+   */
+  altHref?: string | null;
 }
 
-const { title, description, image, article } = Astro.props;
+const { title, description, image, article, altHref } = Astro.props;
+
+const lang = getLang(Astro.url);
+const other = lang === 'en' ? 'pt' : 'en';
+const t = useTranslations(lang);
+// `undefined` = derive from the path (static pages); `null` = no counterpart.
+const alternate = altHref === undefined ? switchPath(Astro.url, other) : altHref;
 ---
 
 <!doctype html>
-<html lang="pt-BR">
+<html lang={locales[lang]}>
   <head>
-    <BaseHead title={title} description={description} image={image} article={article} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      article={article}
+      lang={lang}
+      alternate={alternate}
+    />
   </head>
   <body>
-    <a href="#main" class="skip-link">Pular para o conteúdo</a>
-    <Header />
+    <a href="#main" class="skip-link">{t['a11y.skip']}</a>
+    <Header lang={lang} alternate={alternate} />
     <main id="main">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>

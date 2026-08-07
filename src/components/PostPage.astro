@@ -1,0 +1,114 @@
+---
+// Article body shared by `/[slug]` and `/en/[slug]`.
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { formatDate, readingTime, excerpt } from '../utils';
+import { postPath, type Post } from '../posts';
+import { useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  post: Post;
+  newer: Post | null;
+  older: Post | null;
+  lang: Lang;
+  /** Same post in the other language, or null when it has not been translated. */
+  alternate: string | null;
+}
+
+const { post, newer, older, lang, alternate } = Astro.props;
+const t = useTranslations(lang);
+const { Content } = await render(post as never);
+const body = post.body ?? '';
+const description = post.data.description ?? excerpt(body);
+const tagsPath = lang === 'en' ? '/en/tags' : '/tags';
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={description}
+  article={true}
+  altHref={alternate}
+>
+  <article>
+    <header class="wrap--content post-header">
+      <h1 class="post-header__title">{post.data.title}</h1>
+      <div class="post-header__meta">
+        <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date, lang)}</time>
+        <span class="dot" aria-hidden="true"></span>
+        <span>{readingTime(body, lang)}</span>
+        {
+          post.data.tags.length > 0 && (
+            <>
+              <span class="dot" aria-hidden="true" />
+              <span class="tags">
+                {post.data.tags.map((tag) => (
+                  <a class="tag" href={`${tagsPath}#${tag.toLowerCase()}`}>
+                    {tag}
+                  </a>
+                ))}
+              </span>
+            </>
+          )
+        }
+      </div>
+    </header>
+
+    <div class="wrap--content prose">
+      <Content />
+    </div>
+
+    <nav class="wrap--content post-nav" aria-label={t['post.nav']}>
+      {
+        older ? (
+          <a class="post-nav__link post-nav__link--prev" href={postPath(older.id, lang)}>
+            <span class="post-nav__kicker">{t['post.older']}</span>
+            <span class="post-nav__title">{older.data.title}</span>
+          </a>
+        ) : (
+          <span aria-hidden="true" />
+        )
+      }
+      {
+        newer ? (
+          <a class="post-nav__link post-nav__link--next" href={postPath(newer.id, lang)}>
+            <span class="post-nav__kicker">{t['post.newer']}</span>
+            <span class="post-nav__title">{newer.data.title}</span>
+          </a>
+        ) : (
+          <span aria-hidden="true" />
+        )
+      }
+    </nav>
+
+    <section class="wrap--content" style="margin-top: var(--space-xl);">
+      <div id="disqus_thread"></div>
+    </section>
+  </article>
+</BaseLayout>
+
+<script>
+  // Lazy-load Disqus only when the comments area is near the viewport, so it
+  // never costs readers who don't scroll that far.
+  const mount = document.getElementById('disqus_thread');
+  if (mount && !(window as any).__disqusLoaded) {
+    const load = () => {
+      if ((window as any).__disqusLoaded) return;
+      (window as any).__disqusLoaded = true;
+      const d = document;
+      const s = d.createElement('script');
+      s.src = 'https://valdersonjr.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', String(+new Date()));
+      (d.head || d.body).appendChild(s);
+    };
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          load();
+          io.disconnect();
+        }
+      },
+      { rootMargin: '400px' },
+    );
+    io.observe(mount);
+  }
+</script>

@@ -1,12 +1,14 @@
 ---
-import type { CollectionEntry } from 'astro:content';
 import { formatDateShort, readingTime, excerpt } from '../utils';
+import { postPath, type Post } from '../posts';
+import type { Lang } from '../i18n';
 
 interface Props {
-  post: CollectionEntry<'posts'>;
+  post: Post;
+  lang: Lang;
 }
 
-const { post } = Astro.props;
+const { post, lang } = Astro.props;
 const body = post.body ?? '';
 const summary = post.data.description ?? excerpt(body);
 ---
@@ -14,12 +16,12 @@ const summary = post.data.description ?? excerpt(body);
 <article class="post-card">
   <div class="post-card__meta">
     <time class="post-card__date" datetime={post.data.date.toISOString()}>
-      {formatDateShort(post.data.date)}
+      {formatDateShort(post.data.date, lang)}
     </time>
-    <span class="post-card__read">{readingTime(body)}</span>
+    <span class="post-card__read">{readingTime(body, lang)}</span>
   </div>
   <div>
-    <h2 class="post-card__title"><a href={`/${post.id}`}>{post.data.title}</a></h2>
+    <h2 class="post-card__title"><a href={postPath(post.id, lang)}>{post.data.title}</a></h2>
     <p class="post-card__excerpt">{summary}</p>
   </div>
 </article>

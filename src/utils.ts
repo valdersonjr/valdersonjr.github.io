@@ -1,22 +1,28 @@
+import { locales, ui, type Lang } from './i18n';
+
 // UTC keeps date-only frontmatter (e.g. `2026-07-28`, written by Pages CMS)
 // from shifting a day when formatted. Posts with an explicit time still render
 // on their intended calendar day.
 const DATE_TZ = 'UTC';
 
-/** Long, human date in pt-BR, e.g. "17 de janeiro de 2026". */
-export function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat('pt-BR', {
-    day: '2-digit',
+// pt-BR reads "06 de agosto de 2026"; en-US reads "August 6, 2026". Same data,
+// each language's own conventions.
+const DAY: Record<Lang, '2-digit' | 'numeric'> = { pt: '2-digit', en: 'numeric' };
+
+/** Long, human date, e.g. "17 de janeiro de 2026" / "January 17, 2026". */
+export function formatDate(date: Date, lang: Lang = 'pt'): string {
+  return new Intl.DateTimeFormat(locales[lang], {
+    day: DAY[lang],
     month: 'long',
     year: 'numeric',
     timeZone: DATE_TZ,
   }).format(date);
 }
 
-/** Compact date for lists, e.g. "17 jan 2026". */
-export function formatDateShort(date: Date): string {
-  return new Intl.DateTimeFormat('pt-BR', {
-    day: '2-digit',
+/** Compact date for lists, e.g. "17 jan 2026" / "Jan 17, 2026". */
+export function formatDateShort(date: Date, lang: Lang = 'pt'): string {
+  return new Intl.DateTimeFormat(locales[lang], {
+    day: DAY[lang],
     month: 'short',
     year: 'numeric',
     timeZone: DATE_TZ,
@@ -25,9 +31,13 @@ export function formatDateShort(date: Date): string {
     .replace('.', '');
 }
 
-/** Day + month only, e.g. "17 jan". */
-export function formatDayMonth(date: Date): string {
-  return new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', timeZone: DATE_TZ })
+/** Day + month only, e.g. "17 jan" / "Jan 17". */
+export function formatDayMonth(date: Date, lang: Lang = 'pt'): string {
+  return new Intl.DateTimeFormat(locales[lang], {
+    day: DAY[lang],
+    month: 'short',
+    timeZone: DATE_TZ,
+  })
     .format(date)
     .replace('.', '');
 }
@@ -38,11 +48,11 @@ export function getYear(date: Date): number {
   );
 }
 
-/** Rough reading time in Portuguese from raw markdown. */
-export function readingTime(markdown: string): string {
+/** Rough reading time from raw markdown, in the reader's language. */
+export function readingTime(markdown: string, lang: Lang = 'pt'): string {
   const words = markdown.trim().split(/\s+/).filter(Boolean).length;
   const minutes = Math.max(1, Math.round(words / 200));
-  return `${minutes} min de leitura`;
+  return ui[lang]['post.readingTime'](minutes);
 }
 
 /** Plain-text excerpt from markdown for cards and meta descriptions. */

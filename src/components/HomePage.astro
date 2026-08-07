@@ -1,0 +1,41 @@
+---
+// Home shared by `/` (pt) and `/en`. Only the language differs.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from './PostCard.astro';
+import { getPosts } from '../posts';
+import { useTranslations, type Lang } from '../i18n';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const posts = await getPosts(lang);
+---
+
+<BaseLayout title={t['site.name']}>
+  <section class="wrap page-intro">
+    <span class="page-intro__eyebrow">{t['home.eyebrow']}</span>
+    <h1 class="page-intro__title">{t['home.title']}</h1>
+    <p class="page-intro__lead">{t['home.lead']}</p>
+  </section>
+
+  <section class="wrap">
+    {
+      posts.length > 0 ? (
+        <ul class="post-list">
+          {posts.map((post) => (
+            <li class="post-list__item">
+              <PostCard post={post} lang={lang} />
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="lead" style="padding-block: var(--space-lg);">
+          {t['home.empty']}
+        </p>
+      )
+    }
+  </section>
+</BaseLayout>

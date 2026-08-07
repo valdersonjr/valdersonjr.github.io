@@ -1,9 +1,9 @@
 ---
-import PostPage from '../components/PostPage.astro';
-import { getPosts, getAlternate } from '../posts';
+import PostPage from '../../components/PostPage.astro';
+import { getPosts, getAlternate } from '../../posts';
 
 export async function getStaticPaths() {
-  const posts = await getPosts('pt');
+  const posts = await getPosts('en');
 
   return Promise.all(
     posts.map(async (post, i) => ({
@@ -12,7 +12,7 @@ export async function getStaticPaths() {
         post,
         newer: posts[i - 1] ?? null, // more recent (list is newest-first)
         older: posts[i + 1] ?? null, // older
-        alternate: await getAlternate(post, 'pt'),
+        alternate: await getAlternate(post, 'en'),
       },
     })),
   );
@@ -21,4 +21,4 @@ export async function getStaticPaths() {
 const { post, newer, older, alternate } = Astro.props;
 ---
 
-<PostPage post={post} newer={newer} older={older} lang="pt" alternate={alternate} />
+<PostPage post={post} newer={newer} older={older} lang="en" alternate={alternate} />
