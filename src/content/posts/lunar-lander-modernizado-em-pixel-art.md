@@ -23,4 +23,4 @@ Contrato: um contrato (ou missão) será a motivação inicial que teremos como 
 
 A ideia central do jogo é a mecânica de pouso. Além disso, percebo um crescente movimento atual na busca por recursos de diversão que não preveem muitas dificuldades de aprendizado (em outras palavras, busca por dopamina fácil). Por este motivo, quero que o jogo facilite ao máximo o jogador apenas chegar em uma dada região, pousar a nave e receber sua recompensa. Como toda boa ideia, quero começar e ir refinando ela com o passar do tempo. Posteriormente, voltarei aqui para averiguar o que tinha inicialmente de proposta e o que construí de fato (não sei quanto tempo levarei).
 
-Esqueci de falar que a stack é Godot com Gdscript e Aseprite para pixel art.
+Esqueci de falar que a stack é Godot com Gdscript e Aseprite para pixel art. A prototipação inicial será feita através da utilização de pacotes de pixel art com licensa gratuita e utilização de agente de codificação.
