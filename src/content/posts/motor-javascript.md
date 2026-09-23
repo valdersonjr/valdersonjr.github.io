@@ -1,6 +1,8 @@
 ---
 title: Motor Javascript
 date: 2026-09-23
+tags:
+  - Javascript
 description: O que todo bom desenvolvedor precisa saber
 published: true
 ---
